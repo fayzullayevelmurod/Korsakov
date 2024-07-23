@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(../../public/fonts/ReformaGrotesk/stylesheet.css);
+
 body {
   @apply bg-graphite-gray font-Montserrat font-normal text-base;
 }
+
 
 .wrapper {
   display: flex;
@@ -18,7 +21,9 @@ body {
 }
 
 .title {
-  @apply font-ReformaGroteskLight text-[96px] font-normal uppercase leading-[106.94px] tracking-[0.01em] text-light-brown;
+  /* font-ReformaGroteskLight  */
+  @apply text-[96px] font-normal uppercase leading-[106.94px] tracking-[0.01em] text-light-brown;
+  font-family: "ReformaGroteskDemiC";
 }
 .desc {
   @apply font-Muller text-light-white text-lg leading-6 tracking-wide font-light;
