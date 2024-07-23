@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Fonst: ReformaGrotesk -->
+  <link rel="stylesheet" href="./fonts/ReformaGrotesk/stylesheet.css">
+  <!-- Fonst: Montserrat -->
+  <link rel="stylesheet" href="./fonts/Monserat/stylesheet.css">
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <!-- header -->
+    <header id="header">
+      <div class="flex items-center justify-between pt-7 text-sm	max-w-[1388px] mx-auto">
+        <button class="menu flex items-center gap-2.5">
+          <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu">
+          <span class="font-light text-white">меню</span>
+        </button>
+        <a class="text-white" href="#!">
+          <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="290" height="70">
+        </a>
+        <a class="text-white font-semibold leading-6.5 tracking-wide" href="tel:+70000000000">+7 (000) 000-00-00</a>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main id="main">
+
+      <!-- interyer nomer -->
+      <section class="interyer-nomer pt-[110px] pb-[120px]">
+        <div class="container">
+          <div class="flex justify-between items-end">
+            <h1 class="title">интерьер номера</h1>
+
+            <div class="btns flex gap-[53px]">
+              <button class="prev-btn">
+                <img src="./assets/images/icons/prev-arrow.svg" alt="prev-arrow">
+              </button>
+              <button class="next-btn">
+                <img src="./assets/images/icons/next-arrow.svg" alt="next-arrow">
+              </button>
+            </div>
+          </div>
+          <div class="swiper interyer-nomer__swiper mt-14">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-[465px]">
+                <img class="h-[465px]" width="100%" height="465" src="assets/images/slide-img-1.png" alt="product img">
+              </div>
+              <div class="swiper-slide h-[465px]">
+                <img class="h-[465px]" width="100%" height="465" src="assets/images/slide-img-2.png" alt="product img">
+              </div>
+              <div class="swiper-slide h-[465px]">
+                <img class="h-[465px]" width="100%" height="465" src="assets/images/slide-img-3.png" alt="product img">
+              </div>
+              <div class="swiper-slide h-[465px]">
+                <img class="h-[465px]" width="100%" height="465" src="assets/images/slide-img-1.png" alt="product img">
+              </div>
+              <div class="swiper-slide h-[465px]">
+                <img class="h-[465px]" width="100%" height="465" src="assets/images/slide-img-2.png" alt="product img">
+              </div>
+              <div class="swiper-slide h-[465px]">
+                <img class="h-[465px]" width="100%" height="465" src="assets/images/slide-img-3.png" alt="product img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-light-brown pt-[73px] pb-[61px]" id="footer">
+      <div class="container flex items-start justify-between gap-[99px]">
+        <a href="#!">
+          <img src="./assets/images/logo/compant-logo-black.png" alt="company-logo" width="261" height="63">
+        </a>
+        <div class="flex items-start gap-[108px] w-full">
+          <div>
+            <div class="text-graphite-gray font-medium text-sm leading-8 pb-10px">Покупателям</div>
+            <ul>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Акции</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Новости и статьи</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Реквизиты и документы</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Ипотека</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-graphite-gray font-medium text-sm leading-8 pb-10px">Недвижимость</div>
+            <ul>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Квартиры</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Коммерческие помещения</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-graphite-gray font-medium text-sm leading-8 pb-10px">Компания</div>
+            <ul>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">О компании</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- swiper js -->
+  <script src="../src/js/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="../src/js/main.js"></script>
+</body>
+
+</html>

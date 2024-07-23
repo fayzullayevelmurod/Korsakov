@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-graphite-gray font-Montserrat font-normal text-base;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  @apply max-w-[1234px] mx-auto;
+}
+
+.title {
+  /* ReformaGroteskLightC */
+  @apply text-[96px] font-normal uppercase leading-[106.94px] tracking-[0.01em] text-light-brown;
+  font-family: "ReformaGroteskLightC";
+}
+.interyer-nomer__swiper .swiper-slide {
+  transition: all 0.2s linear;
+}
+.interyer-nomer__swiper .swiper-slide-active {
+  min-width: 720px !important;
+}
