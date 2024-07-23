@@ -17,6 +17,7 @@ module.exports = {
         "light-brown": "#B99984",
         "light-gray": "#313245B2",
         "light-white": "#FFFFFFB2",
+        "border-color": "#B9998469"
       },
       lineHeight: {
         6.5: "26px",

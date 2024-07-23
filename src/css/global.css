@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(../../public/fonts/ReformaGrotesk/stylesheet.css);
-
+@font-face {
+  font-family: "Reforma Grotesk Light W08 Rg";
+  src: url("https://db.onlinewebfonts.com/t/f309a212a70615569ec21bd5d4471c9f.eot");
+  src: url("https://db.onlinewebfonts.com/t/f309a212a70615569ec21bd5d4471c9f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f309a212a70615569ec21bd5d4471c9f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f309a212a70615569ec21bd5d4471c9f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f309a212a70615569ec21bd5d4471c9f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f309a212a70615569ec21bd5d4471c9f.svg#Reforma Grotesk Light W08 Rg")
+      format("svg");
+}
 body {
   @apply bg-graphite-gray font-Montserrat font-normal text-base;
 }
-
 
 .wrapper {
   display: flex;
@@ -21,16 +32,36 @@ body {
 }
 
 .title {
-  /* font-ReformaGroteskLight  */
-  @apply text-[96px] font-normal uppercase leading-[106.94px] tracking-[0.01em] text-light-brown;
-  font-family: "ReformaGroteskDemiC";
+  @apply font-ReformaGroteskLight text-[96px] font-normal uppercase leading-[106.94px] tracking-[0.01em] text-light-brown;
+  font-family: "Reforma Grotesk Light W08 Rg";
 }
+
+.title-lg {
+  @apply font-ReformaGroteskLight text-[128px] font-normal uppercase leading-[142.59px] tracking-[0.01em] text-light-brown;
+  font-family: "Reforma Grotesk Light W08 Rg";
+}
+
+.title-xs {
+  @apply font-Muller text-4xl font-normal uppercase leading-6 tracking-[0.01em] text-light-brown;
+}
+
 .desc {
   @apply font-Muller text-light-white text-lg leading-6 tracking-wide font-light;
 }
+
 .interyer-nomer__swiper .swiper-slide {
   transition: all 0.2s linear;
 }
+
 .interyer-nomer__swiper .swiper-slide-active {
   min-width: 720px !important;
+}
+
+.outline-btn {
+  @apply font-Muller text-sm leading-[18px] py-2 px-6 rounded-[50px] font-normal border-light-brown border text-light-brown transition-all  ease-linear hover:bg-light-brown hover:text-white;
+}
+
+/*  */
+.breadcrumb ul {
+  @apply flex items-center gap-4 text-white font-Muller text-sm leading-[14px] pt-[83px] pb-5;
 }
