@@ -10,7 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -19,9 +18,10 @@ body {
 }
 
 .title {
-  /* ReformaGroteskLightC */
-  @apply text-[96px] font-normal uppercase leading-[106.94px] tracking-[0.01em] text-light-brown;
-  font-family: "ReformaGroteskLightC";
+  @apply font-ReformaGroteskLight text-[96px] font-normal uppercase leading-[106.94px] tracking-[0.01em] text-light-brown;
+}
+.desc {
+  @apply font-Muller text-light-white text-lg leading-6 tracking-wide font-light;
 }
 .interyer-nomer__swiper .swiper-slide {
   transition: all 0.2s linear;

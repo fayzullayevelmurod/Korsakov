@@ -609,6 +609,14 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-\[120px\] {
+  margin-top: 120px;
+}
+
+.mt-\[51px\] {
+  margin-top: 51px;
+}
+
 .flex {
   display: flex;
 }
@@ -633,12 +641,20 @@ video {
   max-width: 1388px;
 }
 
+.max-w-\[515px\] {
+  max-width: 515px;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .resize {
   resize: both;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-start {
@@ -661,6 +677,14 @@ video {
   gap: 0.625rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-\[102px\] {
+  gap: 102px;
+}
+
 .gap-\[108px\] {
   gap: 108px;
 }
@@ -671,6 +695,10 @@ video {
 
 .gap-\[99px\] {
   gap: 99px;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .bg-light-brown {
@@ -702,9 +730,26 @@ video {
   padding-top: 73px;
 }
 
+.font-Muller {
+  font-family: "Muller", sans-serif;
+}
+
+.font-ReformaGroteskLight {
+  font-family: "ReformaGroteskDemiC", "Montserrat", sans-serif;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[54px\] {
+  font-size: 54px;
 }
 
 .font-light {
@@ -719,12 +764,28 @@ video {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .leading-6\.5 {
   line-height: 26px;
 }
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-\[55\.73px\] {
+  line-height: 55.73px;
 }
 
 .tracking-wide {
@@ -743,6 +804,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-light-brown {
+  --tw-text-opacity: 1;
+  color: rgb(185 153 132 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -786,7 +852,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -797,7 +862,7 @@ body {
 }
 
 .title {
-  /* ReformaGroteskLightC */
+  font-family: "ReformaGroteskDemiC", "Montserrat", sans-serif;
   font-size: 96px;
   font-weight: 400;
   text-transform: uppercase;
@@ -805,7 +870,15 @@ body {
   letter-spacing: 0.01em;
   --tw-text-opacity: 1;
   color: rgb(185 153 132 / var(--tw-text-opacity));
-  font-family: "ReformaGroteskLightC";
+}
+
+.desc {
+  font-family: "Muller", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  color: #FFFFFFB2;
 }
 
 .interyer-nomer__swiper .swiper-slide {
