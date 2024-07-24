@@ -16,6 +16,19 @@
     url("https://db.onlinewebfonts.com/t/f309a212a70615569ec21bd5d4471c9f.svg#Reforma Grotesk Light W08 Rg")
       format("svg");
 }
+@font-face {
+  font-family: "Reforma Grotesk W01 Medium";
+  src: url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.eot");
+  src: url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.svg#Reforma Grotesk W01 Medium")format("svg");
+}
+@import url(https://db.onlinewebfonts.com/c/892951b494976f7fd57f5d460c690966?family=MullerMedium);
+@import url(https://db.onlinewebfonts.com/c/79777f9c7085d7e3c556a082213e51bb?family=Muller-Regular18);
+@import url(https://db.onlinewebfonts.com/c/ff58dca608a4f4a4596b592a1b9538a1?family=Muller+W00+Light);
+
 body {
   @apply bg-graphite-gray font-Montserrat font-normal text-base;
 }
