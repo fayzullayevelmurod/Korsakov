@@ -19,6 +19,7 @@ module.exports = {
         Montserrat: ['"Montserrat"', "sans-serif"],
         // Muller: ['"Muller"', "sans-serif"],
         Muller: ['"Muller-Regular18"', "sans-serif"],
+        Mullerr: ['"Muller"', "sans-serif"],
         MullerLight: ['"Muller W00 Light"', "sans-serif"],
       },
       colors: {
@@ -27,6 +28,7 @@ module.exports = {
         "light-gray": "#313245B2",
         "light-white": "#FFFFFFB2",
         "border-color": "#B9998469",
+        "gray": "#3D3D3D"
       },
       lineHeight: {
         6.5: "26px",

@@ -19,11 +19,16 @@
 @font-face {
   font-family: "Reforma Grotesk W01 Medium";
   src: url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.eot");
-  src: url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.svg#Reforma Grotesk W01 Medium")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/10135661a95d79b0adf85109e0ecfcf2.svg#Reforma Grotesk W01 Medium")
+      format("svg");
 }
 @import url(https://db.onlinewebfonts.com/c/892951b494976f7fd57f5d460c690966?family=MullerMedium);
 @import url(https://db.onlinewebfonts.com/c/79777f9c7085d7e3c556a082213e51bb?family=Muller-Regular18);
@@ -77,4 +82,22 @@ body {
 /*  */
 .breadcrumb ul {
   @apply flex items-center gap-4 text-white font-Muller text-sm leading-[14px] pt-[83px] pb-5;
+}
+
+.gray-btn {
+  @apply py-2 px-[22px] bg-graphite-gray text-light-brown text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-light-brown hover:text-graphite-gray border border-graphite-gray transition-all ease-linear;
+}
+.brown-btn {
+  @apply py-2 px-[22px] bg-light-brown text-graphite-gray text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-graphite-gray hover:text-light-brown border border-light-brown transition-all ease-linear;
+}
+
+.title-xl {
+  @apply font-ReformaGroteskLight;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 55.73px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #3D3D3D;
+  text-transform:uppercase;
 }
