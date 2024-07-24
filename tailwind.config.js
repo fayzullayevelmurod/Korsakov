@@ -12,6 +12,9 @@ module.exports = {
         Montserrat: ['"Montserrat"', "sans-serif"],
         Muller: ['"Muller"'],
       },
+      screens: {
+        'lg-plus': '992px', // Custom breakpoint for 992px
+      },
       colors: {
         "graphite-gray": "#313245",
         "light-brown": "#B99984",

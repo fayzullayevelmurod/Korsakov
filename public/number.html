@@ -23,15 +23,15 @@
 
     <!-- header -->
     <header id="header">
-      <div class="flex items-center justify-between pt-7 text-sm	max-w-[1388px] mx-auto">
-        <button class="menu flex items-center gap-2.5">
+      <div class="flex items-center justify-between pt-7 text-sm	xl:max-w-[1388px] mx-auto xl:px-0 px-5">
+        <button class="menu flex items-center  md:gap-2.5 md:w-[175px]">
           <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu">
-          <span class="font-light text-white">меню</span>
+          <span class="font-light text-white md:block hidden">меню</span>
         </button>
-        <a class="text-white" href="#!">
+        <a class="md:block hidden" href="#!">
           <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="290" height="70">
         </a>
-        <a class="text-white font-semibold leading-6.5 tracking-wide" href="tel:+70000000000">+7 (000) 000-00-00</a>
+        <a class="md:text-white text-light-brown md:text-sm  text-xs font-semibold leading-6.5 tracking-wide" href="tel:+70000000000">+7 (000) 000-00-00</a>
       </div>
     </header>
 
@@ -53,23 +53,23 @@
 
       <!-- single-room -->
       <section class="single-room text-light-brown">
-        <div class="container flex items-end justify-between pb-7">
+        <div class="container flex gap-3 md:items-end justify-between pb-7 md:flex-row flex-col">
           <h1 class="title-lg">Однокомнатный номер</h1>
           <h3 class="title-xs">4.805 млн</h3>
         </div>
         <div class="border-t border-b border-border-color">
-          <div class="container flex items-stretch gap-[52px]">
-            <div class="border-r pt-9 pb-[60px] pr-[102px] border-border-color space-y-[52px]">
+          <div class="container flex items-stretch xl:gap-[52px] lg:w-auto w-full gap-8 lg:flex-row flex-col">
+            <div class="lg:border-r md:pt-9 pt-5 lg:pb-[60px] xl:pr-[102px] lg:pr-8 border-border-color lg:space-y-[52px] space-y-5">
               <div class="flex gap-3">
                 <a class="outline-btn" href="#!">Планировка</a>
                 <a class="outline-btn" href="#!">На этаже</a>
               </div>
-              <div class="bg-white w-[565px] h-[584px] flex items-center justify-center">
+              <div class="bg-white lg:w-[565px] w-full h-[584px] flex items-center justify-center">
                 <img src="./assets/images/singl-room-project.png" alt="singl-room-project">
               </div>
             </div>
-            <div class="pt-9 w-full">
-              <div class="max-w-[310px] mr-auto">
+            <div class="lg:pt-9 w-full">
+              <div class="lg:max-w-[310px] mr-auto">
                 <div class="flex items-stretch gap-6">
                   <div class="text-light-brown">
                     <span class="text-xs leading-6 font-light">Площадь</span>
@@ -87,23 +87,23 @@
                   </div>
                 </div>
                 <p
-                  class="font-Muller leading-[22px] tracking-[0.03em ] text-light-brown font-normal pt-[26px] pb-[18px]">
+                  class="font-Muller md:text-base text-sm  md:leading-[22px] leading-[20px] tracking-[0.03em ] text-light-brown font-normal pt-[26px] pb-[18px]">
                   Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                 </p>
               </div>
               <div
-                class="py-[18px] px-[22px] bg-light-brown text-graphite-gray flex justify-between items-center w-full">
+                class="py-[18px] md:px-[22px] px-5 bg-light-brown text-graphite-gray flex justify-between gap-y-[19px] md:items-center w-full md:flex-row flex-col">
                 <div>
                   <div class="font-medium text-base leading-6">Ипотека от 35.000 руб/мес</div>
                   <span class="font-light text-[13px] leading-[18px]">22 предложения</span>
                 </div>
-                <a href="#!" class="gray-btn">Рассчитать</a>
+                <a href="#!" class="gray-btn text-center">Рассчитать</a>
               </div>
-              <div class="flex gap-5 mt-[30px] mb-[43px]">
-                <a class="brown-btn" href="#!">Забронировать</a>
-                <a class="outline-btn" href="#!">заказать консультацию</a>
+              <div class="flex gap-5 md:mt-[30px] mt-5 md:mb-[43px] mb-[38px] md:flex-row flex-col ">
+                <a class="brown-btn text-center" href="#!">Забронировать</a>
+                <a class="outline-btn text-center md:order-1 -order-1" href="#!">заказать консультацию</a>
               </div>
-              <div class="mb-[52px]">
+              <div class="md:mb-[52px] mb-8">
                 <h4 class="text-xl leading-[20px] font-Muller font-normal">Стоимость</h4>
                 <div class="text-light-brown mt-5 space-y-8">
                   <div class="flex items-center gap-1">
@@ -123,7 +123,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-[52px]">
+              <div class="md:mb-[52px] mb-8">
                 <h4 class="text-xl leading-[20px] font-Muller font-normal">Характеристики</h4>
                 <div class="text-light-brown mt-5 space-y-8">
                   <div class="flex items-center gap-1">
@@ -150,12 +150,11 @@
       </section>
 
       <!-- interyer nomer -->
-      <section class="interyer-nomer pt-[110px] pb-[120px]">
+      <section class="interyer-nomer lg:pt-[110px] pt-[50px] md:pb-[120px] pb-[50px]">
         <div class="container">
           <div class="flex justify-between items-end">
             <h1 class="title">интерьер номера</h1>
-
-            <div class="btns flex gap-[53px]">
+            <div class="btns md:flex hidden gap-[53px]">
               <button class="prev-btn">
                 <img src="./assets/images/icons/prev-arrow.svg" alt="prev-arrow">
               </button>
@@ -164,7 +163,7 @@
               </button>
             </div>
           </div>
-          <div class="swiper interyer-nomer__swiper mt-14">
+          <div class="swiper interyer-nomer__swiper lg:mt-14 mt-5">
             <div class="swiper-wrapper">
               <div class="swiper-slide h-[465px]">
                 <img class="h-[465px]" width="100%" height="465" src="assets/images/slide-img-1.png" alt="product img">
@@ -186,6 +185,14 @@
               </div>
             </div>
           </div>
+          <div class="btns md:hidden flex gap-[53px] mt-8">
+            <button class="prev-btn">
+              <img src="./assets/images/icons/prev-arrow.svg" alt="prev-arrow">
+            </button>
+            <button class="next-btn">
+              <img src="./assets/images/icons/next-arrow.svg" alt="next-arrow">
+            </button>
+          </div>
         </div>
       </section>
 
@@ -193,8 +200,8 @@
       <section class="payment-methods">
         <div class="container">
           <h1 class="title">способы оплаты</h1>
-          <div class="flex items-stretch justify-between mt-[60px] border-t border-[#ECCCB373]">
-            <div class="border-r border-[#ECCCB373] pt-6 pr-7 pb-2">
+          <div class="lg-plus:flex items-stretch justify-between mt-[60px] border-t border-[#ECCCB373] ">
+            <div class="lg-plus:border-r border-[#ECCCB373] lg-plus:border-b-0 border-b lg-plus:pt-6 pt-5 lg-plus:pr-7 lg-plus:pb-2 pb-5">
               <div class="w-[52px] h-[52px] rounded-full flex items-center justify-center bg-light-brown">
                 <img src="./assets/images/icons/procent.svg" alt="procent icon">
               </div>
@@ -206,7 +213,7 @@
                 Вас индивидуальное предложение.
               </p>
             </div>
-            <div class="border-r border-[#ECCCB373] pt-6 pr-7 pb-2 pl-[26px]">
+            <div class="lg-plus:border-r border-[#ECCCB373] lg-plus:border-b-0 border-b lg-plus:pt-6 pt-5 lg-plus:pr-7 lg-plus:pb-2 pb-5 lg-plus:pl-[26px]">
               <div class="w-[52px] h-[52px] rounded-full flex items-center justify-center bg-light-brown">
               </div>
               <h3
@@ -219,7 +226,7 @@
                 без переплат.
               </p>
             </div>
-            <div class="border-r border-[#ECCCB373] pt-6 pr-7 pb-2 pl-[26px]">
+            <div class="lg-plus:border-r border-[#ECCCB373] lg-plus:border-b-0 border-b lg-plus:pt-6 pt-5 lg-plus:pr-7 lg-plus:pb-2 pb-5 lg-plus:pl-[26px]">
               <div class="w-[52px] h-[52px] rounded-full flex items-center justify-center bg-light-brown">
               </div>
               <h3
@@ -229,7 +236,7 @@
                 Возможности использования материнского капитала в качестве первоначального взноса.
               </p>
             </div>
-            <div class="pt-6 pr-7 pb-2 pl-[26px]">
+            <div class="pt-6 pr-7 pb-2 lg-plus:pl-[26px]">
               <div class="w-[52px] h-[52px] rounded-full flex items-center justify-center bg-light-brown">
                 <img src="./assets/images/icons/star.svg" alt="star icon">
               </div>
@@ -530,8 +537,7 @@
             <div class="flex items-center justify-between gap-[102px]">
               <img src="./assets/images/product-img-1.png" alt="product img">
               <div class="max-w-[515px] flex flex-col gap-6">
-                <div
-                  class="text-[54px] leading-[55.73px] text-light-brown font-medium font-ReformaGrotesk uppercase">
+                <div class="text-[54px] leading-[55.73px] text-light-brown font-medium font-ReformaGrotesk uppercase">
                   01
                   —</div>
                 <div class="text-2xl leading-6 text-light-brown font-normal font-Muller uppercase">Заголовок
@@ -545,8 +551,7 @@
             </div>
             <div class="flex items-center justify-between gap-[102px]">
               <div class="max-w-[515px] flex flex-col gap-6">
-                <div
-                  class="text-[54px] leading-[55.73px] text-light-brown font-medium font-ReformaGrotesk uppercase">
+                <div class="text-[54px] leading-[55.73px] text-light-brown font-medium font-ReformaGrotesk uppercase">
                   02 —</div>
                 <div class="text-2xl leading-6 text-light-brown font-normal font-Muller uppercase">Заголовок
                   преимущества
@@ -561,8 +566,7 @@
             <div class="flex items-center justify-between gap-[102px]">
               <img src="./assets/images/product-img-3.png" alt="product img">
               <div class="max-w-[515px] flex flex-col gap-6">
-                <div
-                  class="text-[54px] leading-[55.73px] text-light-brown font-medium font-ReformaGrotesk uppercase">
+                <div class="text-[54px] leading-[55.73px] text-light-brown font-medium font-ReformaGrotesk uppercase">
                   03
                   —</div>
                 <div class="text-2xl leading-6 text-light-brown font-normal font-Muller uppercase">Заголовок
