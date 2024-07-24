@@ -63,10 +63,6 @@ body {
   @apply font-Muller text-4xl font-normal uppercase leading-6 tracking-[0.01em] text-light-brown;
 }
 
-.desc {
-  @apply font-Muller text-light-white text-lg leading-6 tracking-wide font-light;
-}
-
 .interyer-nomer__swiper .swiper-slide {
   transition: all 0.2s linear;
 }
@@ -177,6 +173,17 @@ input[type="range"] {
   .container {
     @apply max-w-full px-5;
   }
+  input[type="range"]{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .title-xl {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 49.54px;
+    letter-spacing: 0.01em;
+  }
 }
 @media screen and (max-width: 992px) {
   .title-lg {
@@ -211,7 +218,7 @@ input[type="range"] {
     line-height: 60.16px;
     letter-spacing: 0.01em;
   }
-  .interyer-nomer__swiper .swiper-slide-active{
+  .interyer-nomer__swiper .swiper-slide-active {
     min-width: unset !important;
   }
 }

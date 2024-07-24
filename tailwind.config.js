@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         ReformaGrotesk: [
-          '"ReformaGrotesk"',
+          '"Reforma Grotesk Light W08 Rg"',
+          // '"ReformaGrotesk"',
           '"Montserrat"',
           "sans-serif",
         ],
@@ -13,7 +14,7 @@ module.exports = {
         Muller: ['"Muller"'],
       },
       screens: {
-        'lg-plus': '992px', // Custom breakpoint for 992px
+        'lg-plus': '992px',
       },
       colors: {
         "graphite-gray": "#313245",

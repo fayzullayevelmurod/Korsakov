@@ -610,14 +610,18 @@ video {
   order: -1;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-\[120px\] {
-  margin-top: 120px;
-  margin-bottom: 120px;
+.my-\[50px\] {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .mb-3 {
@@ -644,36 +648,36 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
-.mt-\[120px\] {
-  margin-top: 120px;
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-\[15px\] {
   margin-top: 15px;
 }
 
-.mt-\[33px\] {
-  margin-top: 33px;
+.mt-\[30px\] {
+  margin-top: 30px;
 }
 
 .mt-\[3px\] {
   margin-top: 3px;
 }
 
-.mt-\[42px\] {
-  margin-top: 42px;
+.mt-\[50px\] {
+  margin-top: 50px;
 }
 
 .mt-\[51px\] {
   margin-top: 51px;
-}
-
-.mt-\[60px\] {
-  margin-top: 60px;
 }
 
 .block {
@@ -696,24 +700,28 @@ video {
   height: 1px;
 }
 
+.h-\[213px\] {
+  height: 213px;
+}
+
 .h-\[278px\] {
   height: 278px;
 }
 
-.h-\[465px\] {
-  height: 465px;
+.h-\[342px\] {
+  height: 342px;
 }
 
 .h-\[52px\] {
   height: 52px;
 }
 
-.h-\[584px\] {
-  height: 584px;
-}
-
 .h-full {
   height: 100%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[1px\] {
@@ -800,20 +808,8 @@ video {
   gap: 2rem;
 }
 
-.gap-\[102px\] {
-  gap: 102px;
-}
-
-.gap-\[108px\] {
-  gap: 108px;
-}
-
 .gap-\[53px\] {
   gap: 53px;
-}
-
-.gap-\[99px\] {
-  gap: 99px;
 }
 
 .gap-y-\[19px\] {
@@ -852,10 +848,6 @@ video {
 
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-r {
-  border-right-width: 1px;
 }
 
 .border-t {
@@ -907,6 +899,11 @@ video {
   padding-right: 10px;
 }
 
+.px-\[14px\] {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -934,8 +931,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pb-9 {
+  padding-bottom: 2.25rem;
 }
 
 .pb-\[18px\] {
@@ -946,28 +951,24 @@ video {
   padding-bottom: 50px;
 }
 
-.pb-\[61px\] {
-  padding-bottom: 61px;
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
-.pb-\[76px\] {
-  padding-bottom: 76px;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pl-\[26px\] {
-  padding-left: 26px;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pr-7 {
   padding-right: 1.75rem;
+}
+
+.pt-11 {
+  padding-top: 2.75rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pt-5 {
@@ -990,18 +991,6 @@ video {
   padding-top: 50px;
 }
 
-.pt-\[58px\] {
-  padding-top: 58px;
-}
-
-.pt-\[73px\] {
-  padding-top: 73px;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1011,12 +1000,7 @@ video {
 }
 
 .font-ReformaGrotesk {
-  font-family: "ReformaGrotesk", "Montserrat", sans-serif;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-family: "Reforma Grotesk Light W08 Rg", "Montserrat", sans-serif;
 }
 
 .text-\[13px\] {
@@ -1029,10 +1013,6 @@ video {
 
 .text-\[40px\] {
   font-size: 40px;
-}
-
-.text-\[54px\] {
-  font-size: 54px;
 }
 
 .text-base {
@@ -1099,16 +1079,16 @@ video {
   line-height: 20px;
 }
 
+.leading-\[33\.02px\] {
+  line-height: 33.02px;
+}
+
 .leading-\[33px\] {
   line-height: 33px;
 }
 
 .leading-\[41\.28px\] {
   line-height: 41.28px;
-}
-
-.leading-\[55\.73px\] {
-  line-height: 55.73px;
 }
 
 .tracking-wide {
@@ -1228,7 +1208,7 @@ body {
 }
 
 .title {
-  font-family: "ReformaGrotesk", "Montserrat", sans-serif;
+  font-family: "Reforma Grotesk Light W08 Rg", "Montserrat", sans-serif;
   font-size: 96px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1240,7 +1220,7 @@ body {
 }
 
 .title-lg {
-  font-family: "ReformaGrotesk", "Montserrat", sans-serif;
+  font-family: "Reforma Grotesk Light W08 Rg", "Montserrat", sans-serif;
   font-size: 128px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1260,15 +1240,6 @@ body {
   letter-spacing: 0.01em;
   --tw-text-opacity: 1;
   color: rgb(185 153 132 / var(--tw-text-opacity));
-}
-
-.desc {
-  font-family: "Muller";
-  font-size: 1.125rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  letter-spacing: 2px;
-  color: #FFFFFFB2;
 }
 
 .interyer-nomer__swiper .swiper-slide {
@@ -1398,7 +1369,7 @@ body {
 }
 
 .title-xl {
-  font-family: "ReformaGrotesk", "Montserrat", sans-serif;
+  font-family: "Reforma Grotesk Light W08 Rg", "Montserrat", sans-serif;
   font-size: 54px;
   font-weight: 500;
   line-height: 55.73px;
@@ -1486,6 +1457,19 @@ input[type="range"] {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+  input[type="range"]{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title-xl {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 49.54px;
+    letter-spacing: 0.01em;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1527,8 +1511,18 @@ input[type="range"] {
     letter-spacing: 0.01em;
   }
 
-  .interyer-nomer__swiper .swiper-slide-active{
+  .interyer-nomer__swiper .swiper-slide-active {
     min-width: unset !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:h-\[465px\] {
+    height: 465px;
+  }
+
+  .sm\:h-\[584px\] {
+    height: 584px;
   }
 }
 
@@ -1545,8 +1539,24 @@ input[type="range"] {
     margin-bottom: 52px;
   }
 
+  .md\:mt-\[120px\] {
+    margin-top: 120px;
+  }
+
   .md\:mt-\[30px\] {
     margin-top: 30px;
+  }
+
+  .md\:mt-\[33px\] {
+    margin-top: 33px;
+  }
+
+  .md\:mt-\[42px\] {
+    margin-top: 42px;
+  }
+
+  .md\:mt-\[60px\] {
+    margin-top: 60px;
   }
 
   .md\:block {
@@ -1565,6 +1575,10 @@ input[type="range"] {
     width: 175px;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1581,6 +1595,10 @@ input[type="range"] {
     gap: 0.625rem;
   }
 
+  .md\:gap-\[53px\] {
+    gap: 53px;
+  }
+
   .md\:px-\[22px\] {
     padding-left: 22px;
     padding-right: 22px;
@@ -1590,13 +1608,51 @@ input[type="range"] {
     padding-bottom: 120px;
   }
 
+  .md\:pb-\[61px\] {
+    padding-bottom: 61px;
+  }
+
+  .md\:pb-\[76px\] {
+    padding-bottom: 76px;
+  }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .md\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
   .md\:pt-9 {
     padding-top: 2.25rem;
+  }
+
+  .md\:pt-\[58px\] {
+    padding-top: 58px;
+  }
+
+  .md\:pt-\[73px\] {
+    padding-top: 73px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-\[54px\] {
+    font-size: 54px;
   }
 
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-sm {
@@ -1608,6 +1664,10 @@ input[type="range"] {
     line-height: 22px;
   }
 
+  .md\:leading-\[55\.73px\] {
+    line-height: 55.73px;
+  }
+
   .md\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1615,32 +1675,57 @@ input[type="range"] {
 }
 
 @media (min-width: 992px) {
+  .lg-plus\:-order-1 {
+    order: -1;
+  }
+
+  .lg-plus\:my-\[120px\] {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
   .lg-plus\:flex {
     display: flex;
   }
 
-  .lg-plus\:border-r {
-    border-right-width: 1px;
+  .lg-plus\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg-plus\:items-center {
+    align-items: center;
+  }
+
+  .lg-plus\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg-plus\:border-b-0 {
     border-bottom-width: 0px;
   }
 
-  .lg-plus\:pr-7 {
-    padding-right: 1.75rem;
+  .lg-plus\:border-r {
+    border-right-width: 1px;
+  }
+
+  .lg-plus\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .lg-plus\:pb-2 {
     padding-bottom: 0.5rem;
   }
 
-  .lg-plus\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
   .lg-plus\:pl-\[26px\] {
     padding-left: 26px;
+  }
+
+  .lg-plus\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .lg-plus\:pt-6 {
+    padding-top: 1.5rem;
   }
 }
 
@@ -1663,6 +1748,26 @@ input[type="range"] {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:gap-\[102px\] {
+    gap: 102px;
+  }
+
+  .lg\:gap-\[108px\] {
+    gap: 108px;
+  }
+
+  .lg\:gap-\[53px\] {
+    gap: 53px;
+  }
+
+  .lg\:gap-\[99px\] {
+    gap: 99px;
   }
 
   .lg\:space-y-\[52px\] > :not([hidden]) ~ :not([hidden]) {

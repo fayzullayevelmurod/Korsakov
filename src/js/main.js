@@ -21,7 +21,7 @@ var swiper = new Swiper(".interyer-nomer__swiper", {
       spaceBetween: 16,
     },
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 16,
     },
   },
@@ -35,6 +35,17 @@ var swiper = new Swiper(".similar-numbers__swiper", {
   navigation: {
     nextEl: ".next-btn-two",
     prevEl: ".prev-btn-two",
+  },
+  breakpoints: {
+    1400: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
   },
 });
 document.addEventListener("DOMContentLoaded", function () {
