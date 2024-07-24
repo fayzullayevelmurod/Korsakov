@@ -84,8 +84,12 @@ body {
   @apply flex items-center gap-4 text-white font-Muller text-sm leading-[14px] pt-[83px] pb-5;
 }
 
-.gray-btn {
+.gray-btn,
+.gray-btn__lg {
   @apply py-2 px-[22px] bg-graphite-gray text-light-brown text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-light-brown hover:text-graphite-gray border border-graphite-gray transition-all ease-linear;
+}
+.gray-btn__lg {
+  @apply py-3 px-[38px] text-white;
 }
 .brown-btn {
   @apply py-2 px-[22px] bg-light-brown text-graphite-gray text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-graphite-gray hover:text-light-brown border border-light-brown transition-all ease-linear;
@@ -98,6 +102,79 @@ body {
   line-height: 55.73px;
   letter-spacing: 0.01em;
   text-align: left;
-  color: #3D3D3D;
-  text-transform:uppercase;
+  color: #3d3d3d;
+  text-transform: uppercase;
+}
+
+/* range slider */
+.sliders_control {
+  position: relative;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 15px;
+  height: 15px;
+  background-color: #313245;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 15px;
+  height: 15px;
+  background-color: #313245;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: var(--_track-heigt);
+  width: 100%;
+  position: absolute;
+  background-color: #31324540;
+  pointer-events: none;
+  width: 351px;
+  height: 1px;
+}
+
+#fromSlider {
+  height: 0;
+  z-index: 1;
+}
+
+.scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+  width: calc(100% - var(--_marker-size));
+  margin-inline: auto;
+  font-size: 0.8rem;
+}
+
+.scale div {
+  position: absolute;
+  translate: -50% 0;
+}
+
+.scale div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -125%;
+  width: 1px;
+  height: 10px;
+  background-color: #666;
+}
+
+/* media queris */
+@media screen and (max-width: 1280px) {
+  .container {
+    @apply max-w-full px-5;
+  }
 }

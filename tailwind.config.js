@@ -4,23 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ReformaGroteskLight: [
-          '"Reforma Grotesk Light W08 Rg"',
-          // '"ReformaGroteskDemiC"',
-          '"Montserrat"',
-          "sans-serif",
-        ],
-        ReformaGroteskMedium: [
-          '"Reforma Grotesk W01 Medium"',
-          // '"ReformaGroteskDemiC"',
+        ReformaGrotesk: [
+          '"ReformaGrotesk"',
           '"Montserrat"',
           "sans-serif",
         ],
         Montserrat: ['"Montserrat"', "sans-serif"],
-        // Muller: ['"Muller"', "sans-serif"],
-        Muller: ['"Muller-Regular18"', "sans-serif"],
-        Mullerr: ['"Muller"', "sans-serif"],
-        MullerLight: ['"Muller W00 Light"', "sans-serif"],
+        Muller: ['"Muller"'],
       },
       colors: {
         "graphite-gray": "#313245",
