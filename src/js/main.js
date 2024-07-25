@@ -60,7 +60,8 @@ var swiper = new Swiper(".similar-numbers__swiper", {
     },
   },
 });
-document.addEventListener("DOMContentLoaded", function () {
+
+try {
   const propertyValue = document.getElementById("toSlider1");
   const downPayment = document.getElementById("toSlider2");
   const loanTerm = document.getElementById("toSlider3");
@@ -95,4 +96,95 @@ document.addEventListener("DOMContentLoaded", function () {
   loanTerm.addEventListener("input", updateValues);
 
   updateValues();
-});
+} catch (error) {}
+
+try {
+  function setValues(lowerInput, upperInput, lowerValue, upperValue, track) {
+    lowerValue.textContent = `${(lowerInput.value * 2 + 44.5).toFixed(1)} м2`;
+    upperValue.textContent = `${(upperInput.value * 2 + 44.5).toFixed(1)} м2`;
+    updateSliderTrack(lowerInput, upperInput, track);
+  }
+
+  function updateSliderTrack(lowerInput, upperInput, track) {
+    const min = parseInt(lowerInput.min);
+    const max = parseInt(upperInput.max);
+    const lowerValue = parseInt(lowerInput.value);
+    const upperValue = parseInt(upperInput.value);
+
+    const lowerPercent = ((lowerValue - min) / (max - min)) * 100;
+    const upperPercent = ((upperValue - min) / (max - min)) * 100;
+
+    track.style.left = `${lowerPercent}%`;
+    track.style.width = `${upperPercent - lowerPercent}%`;
+  }
+
+  document.querySelectorAll(".range-slider").forEach((slider, index) => {
+    const lowerInput = slider.querySelector(`#lower${index + 1}`);
+    const upperInput = slider.querySelector(`#upper${index + 1}`);
+    const lowerValue = slider.querySelector(`#lower-value${index + 1}`);
+    const upperValue = slider.querySelector(`#upper-value${index + 1}`);
+    const track = slider.querySelector(`#track${index + 1}`);
+
+    lowerInput.addEventListener("input", () => {
+      setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+    });
+
+    upperInput.addEventListener("input", () => {
+      setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+    });
+
+    // Set initial values
+    setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+  });
+} catch (error) {
+  console.log(error);
+}
+
+// select
+try {
+  const selectContainer = document.querySelectorAll(".select-container");
+
+  selectContainer.forEach((item) => {
+    const selectToggle = item.querySelector(".select-toggle");
+    const optionBox = item.querySelector(".option-box");
+    const selectedText = item.querySelector(".selected-text");
+    const options = item.querySelectorAll(".option-item");
+    const arrowIcon = item.querySelector(".select-toggle img");
+    const select = item.querySelector(".select");
+
+    selectToggle.addEventListener("click", () => {
+      optionBox.classList.toggle("hidden");
+      arrowIcon.classList.toggle("rotate-180");
+      select.classList.toggle("rounded-b-none");
+    });
+
+    options.forEach((option) => {
+      option.addEventListener("click", (event) => {
+        selectedText.textContent = event.target.textContent;
+        optionBox.classList.add("hidden");
+        arrowIcon.classList.add("rotate-180");
+        select.classList.remove("rounded-b-none");
+      });
+    });
+  });
+} catch (error) {}
+
+
+// list, layotu
+try {
+  const listBtn = document.querySelector('.list-btn');
+  const layoutBtn = document.querySelector('.layout-btn');
+  const listProducts = document.querySelectorAll('.list-product');
+  const productsBox =document.querySelector('.products-box');
+
+  listBtn.addEventListener('click', () => {
+    productsBox.classList.add('list-product');
+  })
+  layoutBtn.addEventListener('click', () => {
+    productsBox.classList.remove('list-product');
+  })
+
+
+} catch (error) {
+console.log(error);
+}

@@ -1,0 +1,120 @@
+/* Muller */
+@font-face {
+  font-family: "Muller";
+  src: url("MullerRegular.eot");
+  src: url("MullerRegular.eot?#iefix") format("embedded-opentype"),
+    url("MullerRegular.woff2") format("woff2"),
+    url("MullerRegular.woff") format("woff"),
+    url("MullerRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("MullerBold.eot");
+  src: url("MullerBold.eot?#iefix") format("embedded-opentype"),
+    url("MullerBold.woff2") format("woff2"),
+    url("MullerBold.woff") format("woff"),
+    url("MullerBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("MullerExtraBold.eot");
+  src: url("MullerExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("MullerExtraBold.woff2") format("woff2"),
+    url("MullerExtraBold.woff") format("woff"),
+    url("MullerExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("MullerMedium.eot");
+  src: url("MullerMedium.eot?#iefix") format("embedded-opentype"),
+    url("MullerMedium.woff2") format("woff2"),
+    url("MullerMedium.woff") format("woff"),
+    url("MullerMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("MullerLight.eot");
+  src: url("MullerLight.eot?#iefix") format("embedded-opentype"),
+    url("MullerLight.woff2") format("woff2"),
+    url("MullerLight.woff") format("woff"),
+    url("MullerLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("MullerExtraBold_1.eot");
+  src: url("MullerExtraBold_1.eot?#iefix") format("embedded-opentype"),
+    url("MullerExtraBold_1.woff2") format("woff2"),
+    url("MullerExtraBold_1.woff") format("woff"),
+    url("MullerExtraBold_1.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("MullerLight_1.eot");
+  src: url("MullerLight_1.eot?#iefix") format("embedded-opentype"),
+    url("MullerLight_1.woff2") format("woff2"),
+    url("MullerLight_1.woff") format("woff"),
+    url("MullerLight_1.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ReformaGroteskMediumC";
+  src: url("ReformaGroteskMediumC.eot");
+  src: url("ReformaGroteskMediumC.eot?#iefix") format("embedded-opentype"),
+    url("ReformaGroteskMediumC.woff2") format("woff2"),
+    url("ReformaGroteskMediumC.woff") format("woff"),
+    url("ReformaGroteskMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("MullerMedium_1.eot");
+  src: url("MullerMedium_1.eot?#iefix") format("embedded-opentype"),
+    url("MullerMedium_1.woff2") format("woff2"),
+    url("MullerMedium_1.woff") format("woff"),
+    url("MullerMedium_1.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Reforma Grotesk";
+  src: url("ReformaGroteskLight.eot");
+  src: url("ReformaGroteskLight.eot?#iefix") format("embedded-opentype"),
+    url("ReformaGroteskLight.woff2") format("woff2"),
+    url("ReformaGroteskLight.woff") format("woff"),
+    url("ReformaGroteskLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
