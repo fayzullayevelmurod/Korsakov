@@ -234,47 +234,51 @@ try {
 //   myMap.geoObjects.add(placemark2);
 // }
 
-ymaps.ready(init);
+try {
+  ymaps.ready(init);
 
-function init() {
-  // Create a new map instance
-  var myMap = new ymaps.Map("map", {
-    center: [44.895, 37.316], // Coordinates of the center of the map (Anapa)
-    zoom: 13,
-    controls: ["zoomControl", "fullscreenControl"],
-  });
+  function init() {
+    // Create a new map instance
+    var myMap = new ymaps.Map("map", {
+      center: [44.895, 37.316], // Coordinates of the center of the map (Anapa)
+      zoom: 13,
+      controls: ["zoomControl", "fullscreenControl"],
+    });
 
-  // Apply custom style to the map
-  myMap.setType("yandex#map");
-  myMap.geoObjects.options.set("preset", "islands#grayIcon");
+    // Apply custom style to the map
+    myMap.setType("yandex#map");
+    myMap.geoObjects.options.set("preset", "islands#grayIcon");
 
-  // Define the coordinates of the locations
-  var location1 = [44.89, 37.32]; // Example coordinates
-  var location2 = [44.9, 37.31]; // Example coordinates
+    // Define the coordinates of the locations
+    var location1 = [44.89, 37.32]; // Example coordinates
+    var location2 = [44.9, 37.31]; // Example coordinates
 
-  // Create placemarks with custom images for each location
-  var placemark1 = new ymaps.Placemark(
-    location1,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location.svg", // Replace with your image URL
-      iconImageSize: [57, 82], // Size of the image
-      iconImageOffset: [-15, -15], // Offset for the image position
-    }
-  );
-  var placemark2 = new ymaps.Placemark(
-    location2,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location.svg", // Replace with your image URL
-      iconImageSize: [57, 82], // Size of the image
-      iconImageOffset: [-15, -15], // Offset for the image position
-    }
-  );
+    // Create placemarks with custom images for each location
+    var placemark1 = new ymaps.Placemark(
+      location1,
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../../public/assets/images/icons/location.svg", // Replace with your image URL
+        iconImageSize: [57, 82], // Size of the image
+        iconImageOffset: [-15, -15], // Offset for the image position
+      }
+    );
+    var placemark2 = new ymaps.Placemark(
+      location2,
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../../public/assets/images/icons/location.svg", // Replace with your image URL
+        iconImageSize: [57, 82], // Size of the image
+        iconImageOffset: [-15, -15], // Offset for the image position
+      }
+    );
 
-  // Add placemarks to the map
-  myMap.geoObjects.add(placemark1);
-  myMap.geoObjects.add(placemark2);
+    // Add placemarks to the map
+    myMap.geoObjects.add(placemark1);
+    myMap.geoObjects.add(placemark2);
+  }
+} catch (error) {
+  console.log(error);
 }

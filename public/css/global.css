@@ -15,7 +15,7 @@ body {
 }
 
 .title-lg {
-  @apply text-[128px] font-normal uppercase leading-[142.59px] tracking-[0.01em] text-light-brown font-ReformaGroteskMediumC;
+  @apply text-[128px] font-normal uppercase leading-[142.59px] tracking-[0.01em] text-light-brown font-ReformaGrotesk;
 }
 .title-lg.ReformaGrotesk {
   @apply font-ReformaGrotesk;
