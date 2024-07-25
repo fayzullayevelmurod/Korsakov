@@ -175,12 +175,14 @@
       </section>
 
       <!-- general plan -->
-      <section>
-        <h1 class="title-lg flex items-center gap-[46px]">
-          <img class="-ml-[98px]" src="./assets/images/icons/title-line.svg" alt="line icon">
-          <span>Преимущества</span>
-        </h1>
-        <div class="w-full h-[758px] relative">
+      <section class="md:mt-[130px] md:mb-[120px] my-[50px]">
+        <div class="container">
+          <h1 class="title-lg flex items-center gap-[46px]">
+            <img class="-ml-[98px]" src="./assets/images/icons/title-line.svg" alt="line icon">
+            <span>Преимущества</span>
+          </h1>
+        </div>
+        <div class="w-full h-[758px] relative md:mt-[46px] mt-[31px]">
           <img class="w-full h-full object-cover" src="./assets/images/complex-bg.png" alt="complex-bg">
           <div class="absolute top-[180px] left-[309px] group">
             <div
@@ -297,7 +299,7 @@
           <div class="absolute bottom-[248px] left-[511px] group">
             <div
               class="w-[60px] cursor-pointer select-none h-[60px] flex items-center justify-center rounded-full bg-white text-graphite-gray relative z-20 group-hover:bg-light-brown group-hover:text-white duration-300">
-              4
+              1
             </div>
             <div
               class="bg-white w-[441px] font-Muller font-normal absolute top-[34px] left-[30px] z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300">
@@ -352,6 +354,60 @@
           </div>
         </div>
       </section>
+
+      <!-- interyer nomer -->
+      <section class="interyer-nomer lg:pt-[110px] pt-[50px] md:pb-[120px] pb-[50px]">
+        <div class="container">
+          <div class="flex justify-between items-end">
+            <h1 class="title">интерьер номера</h1>
+            <div class="btns md:flex hidden gap-[53px]">
+              <button class="prev-btn">
+                <img src="./assets/images/icons/prev-arrow.svg" alt="prev-arrow">
+              </button>
+              <button class="next-btn">
+                <img src="./assets/images/icons/next-arrow.svg" alt="next-arrow">
+              </button>
+            </div>
+          </div>
+          <div class="swiper-container interyer-nomer__swiper lg:mt-14 mt-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sm:h-[465px] h-[213px]">
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-1.png"
+                  alt="product img">
+              </div>
+              <div class="swiper-slide sm:h-[465px] h-[213px]">
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-2.png"
+                  alt="product img">
+              </div>
+              <div class="swiper-slide sm:h-[465px] h-[213px]">
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-3.png"
+                  alt="product img">
+              </div>
+              <div class="swiper-slide sm:h-[465px] h-[213px]">
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-1.png"
+                  alt="product img">
+              </div>
+              <div class="swiper-slide sm:h-[465px] h-[213px]">
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-2.png"
+                  alt="product img">
+              </div>
+              <div class="swiper-slide sm:h-[465px] h-[213px]">
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-3.png"
+                  alt="product img">
+              </div>
+            </div>
+          </div>
+          <div class="btns md:hidden flex gap-[53px] mt-8">
+            <button class="prev-btn">
+              <img src="./assets/images/icons/prev-arrow.svg" alt="prev-arrow">
+            </button>
+            <button class="next-btn">
+              <img src="./assets/images/icons/next-arrow.svg" alt="next-arrow">
+            </button>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!-- footer -->
@@ -410,7 +466,10 @@
 
   </div>
 
-
+  <!-- swiper js -->
+  <script src="../src/js/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="../src/js/main.js"></script>
 </body>
 
 </html>

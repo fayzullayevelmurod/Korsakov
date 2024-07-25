@@ -55,17 +55,15 @@ body {
 .title-xs {
   @apply font-Muller text-4xl font-normal uppercase leading-6 tracking-[0.01em] text-light-brown;
 }
-
 .interyer-nomer__swiper .swiper-slide {
-  transition: all 0.2s linear;
+  transition: width 0.3s ease !important;
 }
-
 .interyer-nomer__swiper .swiper-slide-active {
-  min-width: 720px !important;
+  width: 720px !important;
 }
 
 .outline-btn {
-  @apply font-Muller h-[34px] flex items-center justify-center text-sm leading-[18px] py-2 px-6 rounded-[50px] font-normal border-light-brown border text-light-brown transition-all  ease-linear hover:bg-light-brown hover:text-white;
+  @apply font-Muller uppercase h-[34px] flex items-center justify-center text-sm leading-[18px] py-2 px-6 rounded-[50px] font-normal border-light-brown border text-light-brown transition-all  ease-linear hover:bg-light-brown hover:text-white;
 }
 
 /*  */
