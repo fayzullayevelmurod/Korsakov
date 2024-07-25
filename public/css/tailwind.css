@@ -789,6 +789,10 @@ video {
   margin-top: 31px;
 }
 
+.mt-\[36px\] {
+  margin-top: 36px;
+}
+
 .mt-\[38px\] {
   margin-top: 38px;
 }
@@ -803,6 +807,10 @@ video {
 
 .mt-\[5px\] {
   margin-top: 5px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .mt-\[70px\] {
@@ -863,6 +871,10 @@ video {
 
 .h-\[40px\] {
   height: 40px;
+}
+
+.h-\[467px\] {
+  height: 467px;
 }
 
 .h-\[52px\] {
@@ -1023,6 +1035,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-11 {
+  gap: 2.75rem;
 }
 
 .gap-12 {
@@ -1207,6 +1223,10 @@ video {
   border-color: #B9998469;
 }
 
+.border-\[\#B9998478\] {
+  border-color: #B9998478;
+}
+
 .border-\[\#ECCCB373\] {
   border-color: #ECCCB373;
 }
@@ -1255,6 +1275,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1442,6 +1467,14 @@ video {
   padding-top: 1.75rem;
 }
 
+.pt-\[13px\] {
+  padding-top: 13px;
+}
+
+.pt-\[14px\] {
+  padding-top: 14px;
+}
+
 .pt-\[17px\] {
   padding-top: 17px;
 }
@@ -1497,6 +1530,10 @@ video {
 
 .text-\[13px\] {
   font-size: 13px;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
 }
 
 .text-\[20px\] {
@@ -1585,6 +1622,10 @@ video {
 
 .leading-\[19\.5px\] {
   line-height: 19.5px;
+}
+
+.leading-\[20\.72px\] {
+  line-height: 20.72px;
 }
 
 .leading-\[20px\] {
@@ -1679,6 +1720,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.sepia {
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1740,6 +1786,10 @@ body {
   letter-spacing: 0.01em;
   --tw-text-opacity: 1;
   color: rgb(185 153 132 / var(--tw-text-opacity));
+}
+
+.title-lg.ReformaGrotesk {
+  font-family: "Reforma Grotesk";
 }
 
 .title-xs {
@@ -1900,6 +1950,12 @@ body {
   text-align: left;
   color: #3d3d3d;
   text-transform: uppercase;
+}
+
+.title-xl.brown {
+  font-family: "Reforma Grotesk";
+  --tw-text-opacity: 1;
+  color: rgb(185 153 132 / var(--tw-text-opacity));
 }
 
 .mortgage-calculator .title-xl {
@@ -2157,11 +2213,11 @@ input[type="range"]:focus {
 } */
 
 .products-box.list-product .product-box:nth-child(even) {
-  border-top: 1px solid #ECCCB373;
-  border-bottom: 1px solid #ECCCB373;
+  border-top: 1px solid #ecccb373;
+  border-bottom: 1px solid #ecccb373;
 }
 
-.products-box.list-product .product-box:last-child{
+.products-box.list-product .product-box:last-child {
   border-bottom: none;
 }
 
@@ -2189,6 +2245,10 @@ input[type="range"]:focus {
 
 .products-box.list-product .layout-space-l {
   padding-left: 45px;
+}
+
+[class*="ymaps-"][class*="-ground-pane"] {
+  filter: grayscale(100);
 }
 
 .hover\:bg-light-brown:hover {

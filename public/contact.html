@@ -5,15 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- Fonst: ReformaGrotesk -->
-  <link rel="stylesheet" href="./fonts/ReformaGrotesk/stylesheet.css">
-  <!-- Fonst: Montserrat -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
   <link rel="stylesheet" href="./fonts/Monserat/stylesheet.css">
-  <!-- Fonst: Muller -->
-  <link rel="stylesheet" href="./fonts/Muller/stylesheet.css">
   <!-- swiper css link -->
-  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/tailwind.css">
+  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/tailwind.css" />
 </head>
 
 <body>
@@ -24,55 +22,91 @@
       <div
         class="header-menu absolute top-0 left-0 w-[375px] bg-light-brown pt-[23px] px-[24px] pb-[35px] -translate-x-full duration-300">
         <button class="close-menu__btn mb-[150px]">
-          <img src="./assets/images/icons/close-icon.svg" alt="close icon">
+          <img src="./assets/images/icons/close-icon.svg" alt="close icon" />
         </button>
         <ul class="space-y-4 pb-[197px]">
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGrotesk text-[40px] " href="#!">О
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
+              href="#!">О
               комплексе</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGrotesk text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Генплан</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGrotesk text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Номера</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGrotesk text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Ипотека</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGrotesk text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Акции</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGrotesk text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Документы</a>
           </li>
         </ul>
         <a class="gray-btn__lg" href="#!">Заказать звонок</a>
       </div>
-      <div class="flex items-center justify-between pt-7 text-sm	xl:max-w-[1388px] mx-auto xl:px-0 px-5">
-        <button class="open-menu__btn flex items-center  md:gap-2.5 md:w-[175px]">
-          <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu">
+      <div class="flex items-center justify-between pt-7 text-sm xl:max-w-[1388px] mx-auto xl:px-0 px-5">
+        <button class="open-menu__btn flex items-center md:gap-2.5 md:w-[175px]">
+          <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu" />
           <span class="font-light text-white md:block hidden">меню</span>
         </button>
         <a class="md:block hidden" href="#!">
-          <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="290" height="70">
+          <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="290" height="70" />
         </a>
-        <a class="md:text-white text-light-brown md:text-sm  text-xs font-semibold leading-6.5 tracking-wide"
+        <a class="md:text-white text-light-brown md:text-sm text-xs font-semibold leading-6.5 tracking-wide"
           href="tel:+70000000000">+7 (000) 000-00-00</a>
       </div>
     </header>
 
     <main>
+      <!-- breadcrumb -->
+      <div class="breadcrumb container">
+        <ul>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <img src="./assets/images/icons/next-icon.svg" alt="next icon">
+          <li>
+            Конаткты
+          </li>
+        </ul>
+      </div>
 
+      <!-- contact -->
+      <section class="contact">
+        <div class="container">
+          <h1 class="title-lg ReformaGrotesk">Контакты</h1>
+
+          <div class="flex gap-11 mt-[36px]">
+            <div class="text-light-brown border-t border-[#B9998478] pt-[13px]">
+              <h3 class="title-xl brown mb-3">Головной офис</h3>
+              <a class="text-[17px] leading-[20.72px] font-semibold block" href="#!">г. Новороссийск, п. Дзержинского,
+                244</a>
+              <a class="text-base leading-6 tracking-wide block pt-[14px] pb-2" href="#!">+7 (000) 000-00-00</a>
+              <a class="text-base leading-6 tracking-wide block" href="mailto:mail@pochta.ru">mail@pochta.ru</a>
+            </div>
+            <div class="text-light-brown border-t border-[#B9998478] pt-[13px]">
+              <h3 class="title-xl brown mb-3">офис продаж</h3>
+              <a class="text-[17px] leading-[20.72px] font-semibold block" href="#!">г. Новороссийск, п. Дзержинского, 244</a>
+              <a class="text-base leading-6 tracking-wide block pt-[14px] pb-2" href="#!">+7 (000) 000-00-00</a>
+              <a class="text-base leading-6 tracking-wide block" href="mailto:mail@pochta.ru">mail@pochta.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative h-[467px] overflow-hidden mt-[60px]" id="map"></div>
+      </section>
     </main>
 
     <!-- footer -->
-    <footer class="bg-light-brown md:pt-[73px] pt-11 pb-5 md:pb-[61px] md:mt-[120px] mt-[50px]" id="footer">
+    <footer class="bg-light-brown md:pt-[73px] pt-11 pb-5 md:pb-[61px]" id="footer">
       <div class="container flex lg-plus:flex-row flex-col items-start justify-between lg:gap-[99px] gap-8">
         <a href="#!">
           <img src="./assets/images/logo/compant-logo-black.png" alt="company-logo" width="261" height="63">
@@ -126,6 +160,7 @@
     </footer>
   </div>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
   <!-- swiper js -->
   <script src="../src/js/swiper-bundle.min.js"></script>
   <!-- js -->

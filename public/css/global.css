@@ -17,6 +17,9 @@ body {
 .title-lg {
   @apply text-[128px] font-normal uppercase leading-[142.59px] tracking-[0.01em] text-light-brown font-ReformaGroteskMediumC;
 }
+.title-lg.ReformaGrotesk {
+  @apply font-ReformaGrotesk;
+}
 
 .title-xs {
   @apply font-Muller text-4xl font-normal uppercase leading-6 tracking-[0.01em] text-light-brown;
@@ -57,6 +60,9 @@ body {
   text-align: left;
   color: #3d3d3d;
   text-transform: uppercase;
+}
+.title-xl.brown {
+  @apply font-ReformaGrotesk text-light-brown;
 }
 .mortgage-calculator .title-xl {
   @apply text-graphite-gray;
@@ -260,10 +266,10 @@ input[type="range"]:focus {
   border: none;
 } */
 .products-box.list-product .product-box:nth-child(even) {
-  border-top: 1px solid #ECCCB373;
-  border-bottom: 1px solid #ECCCB373;
+  border-top: 1px solid #ecccb373;
+  border-bottom: 1px solid #ecccb373;
 }
-.products-box.list-product .product-box:last-child{
+.products-box.list-product .product-box:last-child {
   border-bottom: none;
 }
 
@@ -288,4 +294,8 @@ input[type="range"]:focus {
 }
 .products-box.list-product .layout-space-l {
   padding-left: 45px;
+}
+
+[class*="ymaps-"][class*="-ground-pane"] {
+  filter: grayscale(100);
 }
