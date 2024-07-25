@@ -65,7 +65,7 @@ body {
 }
 
 .outline-btn {
-  @apply font-Muller text-sm leading-[18px] py-2 px-6 rounded-[50px] font-normal border-light-brown border text-light-brown transition-all  ease-linear hover:bg-light-brown hover:text-white;
+  @apply font-Muller h-[34px] flex items-center justify-center text-sm leading-[18px] py-2 px-6 rounded-[50px] font-normal border-light-brown border text-light-brown transition-all  ease-linear hover:bg-light-brown hover:text-white;
 }
 
 /*  */
@@ -75,13 +75,13 @@ body {
 
 .gray-btn,
 .gray-btn__lg {
-  @apply py-2 px-[22px] bg-graphite-gray text-light-brown text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-light-brown hover:text-graphite-gray border border-graphite-gray transition-all ease-linear;
+  @apply py-2 flex items-center justify-center h-[34px] px-[22px] bg-graphite-gray text-light-brown text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-light-brown hover:text-graphite-gray border border-graphite-gray transition-all ease-linear;
 }
 .gray-btn__lg {
-  @apply py-3 px-[38px] text-white;
+  @apply py-3 px-[38px] h-[50px] text-white capitalize;
 }
 .brown-btn {
-  @apply py-2 px-[22px] bg-light-brown text-graphite-gray text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-graphite-gray hover:text-light-brown border border-light-brown transition-all ease-linear;
+  @apply py-2 flex items-center justify-center h-[34px] px-[22px] bg-light-brown text-graphite-gray text-sm font-normal leading-[18px] rounded-[50px] uppercase hover:bg-graphite-gray hover:text-light-brown border border-light-brown transition-all ease-linear;
 }
 
 .title-xl {
@@ -94,7 +94,9 @@ body {
   color: #3d3d3d;
   text-transform: uppercase;
 }
-
+.mortgage-calculator .title-xl {
+  @apply text-graphite-gray;
+}
 /* range slider */
 .sliders_control {
   position: relative;
@@ -166,7 +168,7 @@ input[type="range"] {
   .container {
     @apply max-w-full px-5;
   }
-  input[type="range"]{
+  input[type="range"] {
     width: 100%;
   }
 }
@@ -213,5 +215,25 @@ input[type="range"] {
   }
   .interyer-nomer__swiper .swiper-slide-active {
     min-width: unset !important;
+  }
+  .outline-btn,
+  .gray-btn,
+  .gray-btn__lg,
+  .brown-btn {
+    height: 30px;
+  }
+  .interyer-nomer {
+    .swiper {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+  .gray-btn__lg {
+    height: 40px;
+  }
+}
+.mortgage-calculator {
+  .scale {
+    margin: 0;
   }
 }

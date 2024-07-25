@@ -1,3 +1,14 @@
+// header
+const headerMenu = document.querySelector(".header-menu");
+const closeBtn = document.querySelector(".close-menu__btn");
+const openMenuBtn = document.querySelector(".open-menu__btn");
+openMenuBtn.addEventListener("click", () => {
+  headerMenu.classList.remove("-translate-x-full");
+});
+closeBtn.addEventListener("click", () => {
+  headerMenu.classList.add("-translate-x-full");
+});
+
 // interyer-nomer__swiper
 var swiper = new Swiper(".interyer-nomer__swiper", {
   slidesPerView: 4,
