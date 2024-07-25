@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- Fonst: ReformaGrotesk -->
+  <link rel="stylesheet" href="./fonts/ReformaGrotesk/stylesheet.css">
+  <!-- Fonst: Montserrat -->
+  <link rel="stylesheet" href="./fonts/Monserat/stylesheet.css">
+  <!-- Fonst: Muller -->
+  <link rel="stylesheet" href="./fonts/Muller/stylesheet.css">
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/tailwind.css">
 </head>
 
@@ -14,14 +22,357 @@
   <div class="wrapper">
 
     <!-- header -->
-    <header id="header"></header>
+    <header>
+      <div class="flex items-center justify-between pt-7 text-sm	xl:max-w-[1388px] mx-auto xl:px-0 px-5">
+        <button class="menu flex items-center  md:gap-2.5 md:w-[175px]">
+          <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu">
+          <span class="font-light text-white md:block hidden">меню</span>
+        </button>
+        <a class="md:block hidden" href="#!">
+          <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="290" height="70">
+        </a>
+        <a class="md:text-white text-light-brown md:text-sm  text-xs font-semibold leading-6.5 tracking-wide"
+          href="tel:+70000000000">+7 (000) 000-00-00</a>
+      </div>
+    </header>
 
     <!-- main -->
-    <main id="main"></main>
+    <main id="main">
+
+      <!-- intro -->
+      <section class="mt-[70px]">
+        <img class="w-full h-[675px]" src="./assets/images/intro-bg.png" alt="intro bg">
+
+        <div class="pt-[92px] pb-[72px] flex items-start justify-between gap-5 container">
+          <div class="space-y-[6px] max-w-[237px]">
+            <span class="text-[54px] leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">842</span>
+            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+              Номера в гостиничном копмлексе
+            </p>
+          </div>
+          <div class="space-y-[6px] max-w-[237px]">
+            <span class="text-[54px] leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">490</span>
+            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+              Машиномест. 434 в многоуровневой парковке и 56 открытых гостевых
+            </p>
+          </div>
+          <div class="space-y-[6px] max-w-[237px]">
+            <span class="text-[54px] leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">3
+              гектара</span>
+            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+              Территории гостиничного комплекса
+            </p>
+          </div>
+          <div class="space-y-[6px] max-w-[237px]">
+            <span class="text-[54px] leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">3
+              корпуса</span>
+            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+              Всего в гостиничном комплексе
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- complex -->
+      <section class="complex">
+        <div class="container">
+          <h1 class="title-lg flex items-center gap-[46px]">
+            <img class="-ml-[98px]" src="./assets/images/icons/title-line.svg" alt="line icon">
+            <span>Преимущества</span>
+          </h1>
+
+          <div class="mt-[51px] flex flex-col gap-10">
+            <div class="flex lg-plus:flex-row flex-col lg-plus:items-center justify-between lg:gap-[102px] gap-5">
+              <img src="./assets/images/product-img-1.png" alt="product img">
+              <div class="max-w-[515px] flex flex-col lg-plus:gap-6">
+                <div
+                  class="md:text-[54px] text-[32px] md:leading-[55.73px] leading-[33.02px] lg-plus:pb-0 pb-2 text-light-brown font-medium font-ReformaGrotesk uppercase">
+                  01
+                  —</div>
+                <div
+                  class="md:text-2xl text-base leading-6 lg-plus:pb-0 pb-2 text-light-brown font-normal font-Muller uppercase">
+                  Заголовок
+                  преимущества
+                </div>
+                <p class="md:text-lg text-sm font-Muller text-light-white leading-6 tracking-wide font-light">
+                  Сложно придумать более идеальную локацию для гостиничного комплекса у резидентов Корсакова будет
+                  соблюдён баланс всех сфер жизни как на территории отеля, так и за его пределами.
+                </p>
+              </div>
+            </div>
+            <div class="flex lg-plus:flex-row flex-col lg-plus:items-center justify-between lg:gap-[102px] gap-5">
+              <div class="max-w-[515px] flex flex-col lg-plus:gap-6 lg-plus:-order-1 order-1">
+                <div
+                  class="md:text-[54px] text-[32px] md:leading-[55.73px] leading-[33.02px] lg-plus:pb-0 pb-2 text-light-brown font-medium font-ReformaGrotesk uppercase">
+                  02
+                  —</div>
+                <div
+                  class="md:text-2xl text-base leading-6 lg-plus:pb-0 pb-2 text-light-brown font-normal font-Muller uppercase">
+                  Заголовок
+                  преимущества
+                </div>
+                <p class="md:text-lg text-sm font-Muller text-light-white leading-6 tracking-wide font-light">
+                  Сложно придумать более идеальную локацию для гостиничного комплекса у резидентов Корсакова будет
+                  соблюдён баланс всех сфер жизни как на территории отеля, так и за его пределами.
+                </p>
+              </div>
+              <img src="./assets/images/product-img-2.png" alt="product img">
+            </div>
+            <div class="flex lg-plus:flex-row flex-col lg-plus:items-center justify-between lg:gap-[102px] gap-5">
+              <img src="./assets/images/product-img-3.png" alt="product img">
+              <div class="max-w-[515px] flex flex-col lg-plus:gap-6">
+                <div
+                  class="md:text-[54px] text-[32px] md:leading-[55.73px] leading-[33.02px] lg-plus:pb-0 pb-2 text-light-brown font-medium font-ReformaGrotesk uppercase">
+                  03
+                  —</div>
+                <div
+                  class="md:text-2xl text-base leading-6 lg-plus:pb-0 pb-2 text-light-brown font-normal font-Muller uppercase">
+                  Заголовок
+                  преимущества
+                </div>
+                <p class="md:text-lg text-sm font-Muller text-light-white leading-6 tracking-wide font-light">
+                  Сложно придумать более идеальную локацию для гостиничного комплекса у резидентов Корсакова будет
+                  соблюдён баланс всех сфер жизни как на территории отеля, так и за его пределами.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- general plan -->
+      <section>
+        <h1 class="title-lg flex items-center gap-[46px]">
+          <img class="-ml-[98px]" src="./assets/images/icons/title-line.svg" alt="line icon">
+          <span>Преимущества</span>
+        </h1>
+        <div class="w-full h-[758px] relative">
+          <img class="w-full h-full object-cover" src="./assets/images/complex-bg.png" alt="complex-bg">
+          <div class="absolute top-[180px] left-[309px] group">
+            <div
+              class="w-[60px] cursor-pointer select-none h-[60px] flex items-center justify-center rounded-full bg-white text-graphite-gray relative z-20 group-hover:bg-light-brown group-hover:text-white duration-300">
+              2
+            </div>
+            <div
+              class="bg-white w-[441px] font-Muller font-normal absolute top-[34px] left-[30px] z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300">
+              <div class="flex items-center justify-between pl-[35px] py-4 pr-[30px] border-b border-[#ADA4A04D]">
+                <span class="text-gray leading-[20px] text-[20px]">1 корпус</span>
+                <span class="text-[#3D3D3D66] text-sm leading-[17px] font-normal text-right">Сдача объекта
+                  <br> IV квартал ‘25</span>
+              </div>
+              <div class="pt-4 pb-[31px] pl-6 pr-9">
+                <div class="flex items-center gap-[10px] mb-5">
+                  <span class="text-[#3D3D3D99]">5 этажей</span>
+                  <div class="w-1 h-1 rounded-full bg-gray"></div>
+                  <div class="text-sm leading-[24px] border-b border-gray text-gray">33 квартиры в продаже</div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        12
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">Коммерция</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 10.230 млн</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        5
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">1-к квартиры</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 4.230 млн</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        32
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">2-к квартиры</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 4.230 млн</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute top-[295px] right-[577px] group">
+            <div
+              class="w-[60px] cursor-pointer select-none h-[60px] flex items-center justify-center rounded-full bg-white text-graphite-gray relative z-20 group-hover:bg-light-brown group-hover:text-white duration-300">
+              3
+            </div>
+            <div
+              class="bg-white w-[441px] font-Muller font-normal absolute top-[34px] left-[30px] z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300">
+              <div class="flex items-center justify-between pl-[35px] py-4 pr-[30px] border-b border-[#ADA4A04D]">
+                <span class="text-gray leading-[20px] text-[20px]">1 корпус</span>
+                <span class="text-[#3D3D3D66] text-sm leading-[17px] font-normal text-right">Сдача объекта
+                  <br> IV квартал ‘25</span>
+              </div>
+              <div class="pt-4 pb-[31px] pl-6 pr-9">
+                <div class="flex items-center gap-[10px] mb-5">
+                  <span class="text-[#3D3D3D99]">5 этажей</span>
+                  <div class="w-1 h-1 rounded-full bg-gray"></div>
+                  <div class="text-sm leading-[24px] border-b border-gray text-gray">33 квартиры в продаже</div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        12
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">Коммерция</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 10.230 млн</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        5
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">1-к квартиры</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 4.230 млн</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        32
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">2-к квартиры</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 4.230 млн</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute bottom-[248px] left-[511px] group">
+            <div
+              class="w-[60px] cursor-pointer select-none h-[60px] flex items-center justify-center rounded-full bg-white text-graphite-gray relative z-20 group-hover:bg-light-brown group-hover:text-white duration-300">
+              4
+            </div>
+            <div
+              class="bg-white w-[441px] font-Muller font-normal absolute top-[34px] left-[30px] z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300">
+              <div class="flex items-center justify-between pl-[35px] py-4 pr-[30px] border-b border-[#ADA4A04D]">
+                <span class="text-gray leading-[20px] text-[20px]">1 корпус</span>
+                <span class="text-[#3D3D3D66] text-sm leading-[17px] font-normal text-right">Сдача объекта
+                  <br> IV квартал ‘25</span>
+              </div>
+              <div class="pt-4 pb-[31px] pl-6 pr-9">
+                <div class="flex items-center gap-[10px] mb-5">
+                  <span class="text-[#3D3D3D99]">5 этажей</span>
+                  <div class="w-1 h-1 rounded-full bg-gray"></div>
+                  <div class="text-sm leading-[24px] border-b border-gray text-gray">33 квартиры в продаже</div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        12
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">Коммерция</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 10.230 млн</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        5
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">1-к квартиры</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 4.230 млн</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-[10px]">
+                      <div
+                        class="w-5 h-5 rounded-full bg-[#D9D9D933] text-[10px] text-[#3D3D3D99] flex items-center justify-center">
+                        32
+                      </div>
+                      <span class="text-[#3D3D3D99] text-[13px] leading-6 whitespace-nowrap">2-к квартиры</span>
+                    </div>
+                    <div class="w-full border-b border-dotted block mx-[5px] border-[#ADA4A04D] mt-1"></div>
+                    <div class="text-[13px] leading-6 whitespace-nowrap text-gray">от 4.230 млн</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- footer -->
-    <footer id="footer">
-
+    <footer class="bg-light-brown md:pt-[73px] pt-11 pb-5 md:pb-[61px] md:mt-[120px] mt-[50px]">
+      <div class="container flex lg-plus:flex-row flex-col items-start justify-between lg:gap-[99px] gap-8">
+        <a href="#!">
+          <img src="./assets/images/logo/compant-logo-black.png" alt="company-logo" width="261" height="63">
+        </a>
+        <div
+          class="flex lg-plus:flex-row flex-col items-start lg:gap-[108px] gap-5 w-full lg:justify-start justify-between">
+          <div>
+            <div class="text-graphite-gray font-medium text-sm leading-8 pb-10px">Покупателям</div>
+            <ul>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Акции</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Новости и статьи</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Реквизиты и документы</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Ипотека</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-graphite-gray font-medium text-sm leading-8 pb-10px">Недвижимость</div>
+            <ul>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Квартиры</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Коммерческие помещения</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-graphite-gray font-medium text-sm leading-8 pb-10px">Компания</div>
+            <ul>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">О компании</a>
+              </li>
+              <li>
+                <a class="text-sm leading-8 text-light-gray" href="#!">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
   </div>

@@ -38,13 +38,6 @@ body {
   @apply bg-graphite-gray font-Montserrat font-normal text-base;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
 .container {
   @apply max-w-[1234px] mx-auto;
 }

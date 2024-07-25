@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         ReformaGrotesk: [
-          '"Reforma Grotesk Light W08 Rg"',
-          // '"ReformaGrotesk"',
+          // '"Reforma Grotesk Light W08 Rg"',
+          '"ReformaGroteskDemiC"',
           '"Montserrat"',
           "sans-serif",
         ],
