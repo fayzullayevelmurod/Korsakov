@@ -13,6 +13,7 @@ closeBtn.addEventListener("click", () => {
 var swiper = new Swiper(".interyer-nomer__swiper", {
   slidesPerView: 4,
   spaceBetween: 51,
+  loop: true,
   speed: 700,
   navigation: {
     nextEl: ".next-btn",

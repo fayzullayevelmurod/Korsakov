@@ -817,6 +817,10 @@ video {
   height: 342px;
 }
 
+.h-\[34px\] {
+  height: 34px;
+}
+
 .h-\[52px\] {
   height: 52px;
 }
@@ -885,6 +889,10 @@ video {
   max-width: 270px;
 }
 
+.max-w-\[351px\] {
+  max-width: 351px;
+}
+
 .max-w-\[515px\] {
   max-width: 515px;
 }
@@ -930,6 +938,10 @@ video {
 
 .items-stretch {
   align-items: stretch;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -980,6 +992,10 @@ video {
   gap: 53px;
 }
 
+.gap-\[63px\] {
+  gap: 63px;
+}
+
 .gap-y-\[19px\] {
   row-gap: 19px;
 }
@@ -1028,8 +1044,16 @@ video {
   white-space: nowrap;
 }
 
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-\[0\.3px\] {
@@ -1062,6 +1086,10 @@ video {
 
 .border-\[\#ECCCB373\] {
   border-color: #ECCCB373;
+}
+
+.border-\[\#FFFFFF99\] {
+  border-color: #FFFFFF99;
 }
 
 .border-border-color {
@@ -1150,6 +1178,10 @@ video {
   padding-bottom: 10px;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1186,6 +1218,10 @@ video {
   padding-bottom: 35px;
 }
 
+.pb-\[40px\] {
+  padding-bottom: 40px;
+}
+
 .pb-\[50px\] {
   padding-bottom: 50px;
 }
@@ -1204,6 +1240,10 @@ video {
 
 .pl-\[35px\] {
   padding-left: 35px;
+}
+
+.pl-\[54px\] {
+  padding-left: 54px;
 }
 
 .pr-5 {
@@ -1579,8 +1619,6 @@ body {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(185 153 132 / var(--tw-border-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-family: "Muller";
@@ -1588,7 +1626,6 @@ body {
   line-height: 1.25rem;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 18px;
   --tw-text-opacity: 1;
   color: rgb(185 153 132 / var(--tw-text-opacity));
   transition-property: all;
@@ -1925,6 +1962,10 @@ input[type="range"] {
     margin-bottom: 52px;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .md\:mt-\[120px\] {
     margin-top: 120px;
   }
@@ -2128,6 +2169,14 @@ input[type="range"] {
 
   .lg-plus\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .lg-plus\:pt-\[50px\] {
+    padding-top: 50px;
+  }
+
+  .lg-plus\:pb-12 {
+    padding-bottom: 3rem;
   }
 }
 
