@@ -170,6 +170,69 @@
         </div>
       </section>
 
+      <!--  -->
+      <section class="container mt-[120px]">
+        <div class="container">
+          <h1 class="title-lg flex items-center gap-[46px]">
+            <img class="-ml-[98px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+            <span>Окупаемость 7 лет</span>
+          </h1>
+
+          <h4 class="text-[36px] leading-[36px] font-normal font-Muller text-light-brown mb-[31px] mt-[50px]">
+            Инвестиционный калькулятор</h4>
+          <div class="flex items-center justify-between gap-4">
+            <div class="bg-light-brown p-6 max-w-[668px] w-full space-y-[30px]">
+              <div class="flex lg:flex-row flex-col items-center  lg:gap-10 gap-[30px] text-gray">
+                <div class="w-full max-w-[238px]">
+                  <span class="text-sm leading-[18px] font-light font-Muller block">Сумма инвестиций</span>
+                  <div class="range_container mt-[15px]">
+                    <div class="sliders_control">
+                      <input id="fromSlider1" type="range" value="120" min="50" max="350" step="10">
+                      <input class="w-[238px]" id="toSlider1" type="range" value="260" min="50" max="350" step="10">
+                    </div>
+                    <div id="scale1" class="scale" data-steps="50"></div>
+                  </div>
+                  <span id="toSliderTooltip1"
+                    class="text-[20px] pt-[15px] leading-[20px] font-normal block font-Muller text-graphite-gray">260
+                    руб.</span>
+                </div>
+                <div class="w-full max-w-[238px]">
+                  <span class="text-sm leading-[18px] font-light font-Muller block">Площадь номера</span>
+                  <div class="range_container mt-[15px]">
+                    <div class="sliders_control">
+                      <input id="fromSlider2" type="range" value="120" min="50" max="350" step="10">
+                      <input class="w-[238px]" id="toSlider2" type="range" value="55" min="50" max="350" step="10">
+                    </div>
+                    <div id="scale2" class="scale" data-steps="50"></div>
+                  </div>
+                  <span id="toSliderTooltip2"
+                    class="text-[20px] pt-[15px] leading-[20px] font-normal block font-Muller text-graphite-gray">55м2</span>
+                </div>
+              </div>
+              <div class="flex items-end gap-4 justify-between">
+                <div class="space-y-[10px] w-full">
+                  <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Ваш телефон</span>
+                  <input
+                    class="w-full border border-[#31324580] rounded-[50px] py-3 px-5 bg-transparent text-graphite-gray placeholder:text-[#3132455E] outline-none h-10"
+                    type="tel" placeholder="+7 (000) 000-00-00">
+                </div>
+                <button
+                  class="w-full bg-graphite-gray h-10 text-base text-white font-normal font-Muller rounded-[50px]">Получить
+                  расчет</button>
+              </div>
+            </div>
+            <div class="text-light-brown space-y-3">
+              <span class="text-2xl block leading-6 font-normal font-Muller">Прибыль от инвестиций:</span>
+              <span class="text-[96px] block leading-[106.94px] font-ReformaGrotesk font-normal">до 9.000.000 руб. /
+                год</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-[60px]">
+
+        </div>
+      </section>
+
       <!-- general plan -->
       <section class="md:mt-[130px] md:mb-[120px] my-[50px]">
         <div class="container">
@@ -464,7 +527,7 @@
           </button>
         </div>
 
-        <div class="flex items-start gap-[50px] mt-[43px]">
+        <div class="flex items-stretch gap-[50px] mt-[43px] divide-[#ECCCB373]">
           <div>
             <h4 class="font-medium text-2xl leading-6 text-light-brown mb-[43px] uppercase">Планировки</h4>
             <div class="grid grid-cols-2 gap-[72px]">
@@ -506,17 +569,42 @@
               </div>
             </div>
           </div>
+          <div class="relative w-[1px] bg-[#ECCCB373]">
+            <div class="w-[3px] h-[142px] bg-light-brown absolute top-0 left-1/2 -translate-x-1/2"></div>
+          </div>
           <div>
             <div class="flex items-start justify-between">
               <h4 class="font-medium text-2xl leading-6 text-light-brown uppercase">1-к номер</h4>
               <div class="space-y-[2px]">
-                <span class="block font-light font-Muller leading-6 text-2xl text-light-brown">от 4.805 млн</span>
+                <span class="block font-light font-Muller leading-6 text-2xl text-light-brown text-right">от 4.805
+                  млн</span>
                 <span class="block text-light-white text-base leading-6 font-light font-Muller">чистая прибыль 780.000 /
                   год *</span>
               </div>
             </div>
-            <div class="bg-[#cbccd0] h-[375px] w-[616px] mt-3">
-              <img class="object-contain" src="./assets/images/proect-1.png" alt="prodject img">
+            <div>
+              <div class="bg-[#cbccd0] h-[375px] w-[616px] mt-3 flex items-center justify-center relative">
+                <img class="object-contain" src="./assets/images/proect-3.png" alt="prodject img">
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[86px] h-[86px] flex flex-col px-[11px] text-center space-y-[2px] cursor-pointer items-center justify-center bg-light-brown rounded-full">
+                  <img src="./assets/images/icons/eye.svg" alt="eye icon">
+                  <span class="font-medium leading-[11px] text-[11px] text-white">Показать ещё</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-[26px]">
+                <div class="flex space-x-6 divide-x divide-[#ADA4A04D] w-fit">
+                  <div>
+                    <span class="text-light-white text-xs leading-6 block font-light">Площадь</span>
+                    <span class="text-light-white text-sm leading-6 block font-medium">42.5 м2</span>
+                  </div>
+                  <div class="pl-6">
+                    <span class="text-light-white text-xs leading-6 block font-light">Подъезд / этаж</span>
+                    <span class="text-light-white text-sm leading-6 block font-medium">3 / 8</span>
+                  </div>
+                </div>
+                <a class="h-10 flex items-center justify-center font-normal text-sm text-graphite-gray px-[31px] bg-light-brown rounded-[50px]"
+                  href="#!">Заказать консультацию</a>
+              </div>
             </div>
           </div>
         </div>

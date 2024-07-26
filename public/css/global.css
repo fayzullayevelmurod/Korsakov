@@ -98,7 +98,7 @@ input[type="range"] {
   position: absolute;
   background-color: #31324540;
   pointer-events: none;
-  width: 351px;
+  /* width: 351px; */
   height: 1px;
 }
 
