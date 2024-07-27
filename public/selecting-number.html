@@ -16,52 +16,56 @@
 
 <body>
 
-  <div class="overflow-hidden">
+  <div class="overflow-hidden relative">
+    <button
+      class="open-filter-btn w-[50px] h-[50px] flex items-center z-50 justify-center bg-light-brown rounded-full xl:hidden fixed bottom-[100px] right-5">
+      <img src="./assets/images/icons/settings.svg" alt="settings">
+    </button>
     <!-- header -->
-    <header class="relative">
+    <header>
       <div
-        class="header-menu absolute top-0 left-0 w-[375px] bg-light-brown pt-[23px] px-[24px] pb-[35px] -translate-x-full duration-300 z-50">
+        class="header-menu absolute top-0 left-0 w-[375px] overflow-y-auto overflow-x-hidden bg-light-brown pt-[23px] px-[24px] pb-[35px] -translate-x-full duration-300">
         <button class="close-menu__btn mb-[150px]">
-          <img src="./assets/images/icons/close-icon.svg" alt="close icon">
+          <img src="./assets/images/icons/close-icon.svg" alt="close icon" />
         </button>
         <ul class="space-y-4 pb-[197px]">
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">О
               комплексе</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Генплан</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Номера</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Ипотека</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Акции</a>
           </li>
           <li>
-            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px] "
+            <a class="font-medium leading-[41.28px] text-graphite-gray font-ReformaGroteskMediumC text-[40px]"
               href="#!">Документы</a>
           </li>
         </ul>
         <a class="gray-btn__lg" href="#!">Заказать звонок</a>
       </div>
-      <div class="flex items-center justify-between pt-7 text-sm	xl:max-w-[1388px] mx-auto xl:px-0 px-5">
-        <button class="open-menu__btn flex items-center  md:gap-2.5 md:w-[175px]">
-          <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu">
+      <div class="flex items-center justify-between text-sm xl:max-w-[1388px] mx-auto xl:px-0 px-5">
+        <button class="open-menu__btn flex items-center md:gap-2.5 md:w-[175px]">
+          <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu" />
           <span class="font-light text-white md:block hidden">меню</span>
         </button>
         <a class="md:block hidden" href="#!">
-          <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="290" height="70">
+          <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="290" height="70" />
         </a>
-        <a class="md:text-white text-light-brown md:text-sm  text-xs font-semibold leading-6.5 tracking-wide"
+        <a class="md:text-white text-light-brown md:text-sm text-xs font-semibold leading-6.5 tracking-wide"
           href="tel:+70000000000">+7 (000) 000-00-00</a>
       </div>
     </header>
@@ -82,114 +86,129 @@
         </ul>
       </div>
 
-      <section class="">
+      <section>
         <div class="container">
-          <h1 class="text-[128px] leading-[142.59px] font-light font-ReformaGrotesk text-light-brown uppercase">Выбор
+          <h1
+            class="md:text-[128px] text-[54px] leading-[60.16px] md:leading-[142.59px] font-light font-ReformaGrotesk text-light-brown uppercase">
+            Выбор
             номера</h1>
-
-          <div class="space-y-6 pb-[38px] filter-box">
-            <div class="flex items-end justify-between gap-12">
-              <div class="space-y-[6px]">
-                <span class="text-[13px] leading-6 text-light-brown">Кол-во комнат</span>
-                <div class="space-x-[10px] flex">
-                  <button
-                    class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">Студия</button>
-                  <button
-                    class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-graphite-gray bg-light-brown uppercase hover:bg-transparent hover:text-light-brown duration-300">1-к</button>
-                  <button
-                    class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">2-к</button>
-                  <button
-                    class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">3-к</button>
-                </div>
-              </div>
-              <div class="max-w-[254px] w-full">
-                <div class="range-slider">
-                  <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Площадь номера</span>
-                  <span class="multi-range block h-2 relative">
-                    <input type="range" min="0" max="50" value="0" id="lower1">
-                    <input type="range" min="0" max="50" value="35" id="upper1">
-                    <div class="slider-track" id="track1"></div>
-                  </span>
-                  <div class="flex items-center justify-between">
-                    <span id="lower-value1" class="text-[13px] leading-6 text-light-brown block">44.5 м2</span>
-                    <span id="upper-value1" class="text-[13px] leading-6 text-light-brown block">184.5 м2</span>
+          <div class="overlay hidden absolute top-0 left-0 w-full h-full bg-[#00000099] z-[100]"></div>
+          <div class="">
+            <button class="fixed top-[23px] z-[100] left-[326px] hidden close-filter-btn">
+              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.01709" y1="18.2758" x2="18.2929" y2="0.999991" stroke="#B99984" stroke-linecap="round" />
+                <line x1="18.2758" y1="19" x2="0.99999" y2="1.72419" stroke="#B99984" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div
+              class="xl:translate-x-[unset] -translate-x-full close-filter-btn duration-300 filter-box xl:space-y-6 xl:pb-[38px] filter-box xl:relative fixed z-[100] bg-graphite-gray top-0 left-0 xl:w-full w-[316px] xl:pt-0 xl:px-0 pt-[14px] px-5 pb-[30px] xl:h-auto h-screen xl:overflow-hidden overflow-y-auto">
+              <h3 class="text-[40px] leading-[44.56px] font-ReformaGrotesk text-light-brown pb-2 xl:hidden block">
+                Фильтры
+              </h3>
+              <div class="flex xl:flex-row flex-col items-end justify-between xl:gap-12 gap-[30px]">
+                <div class="space-y-[6px] xl:w-fit w-full">
+                  <span class="text-[13px] leading-6 text-light-brown">Кол-во комнат</span>
+                  <div class="gap-[10px] flex xl:flex-row flex-col">
+                    <button
+                      class="py-2 px-5 w-full whitespace-nowrap rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">Студия</button>
+                    <button
+                      class="py-2 px-5 w-full whitespace-nowrap rounded-[50px] border border-light-brown text-sm text-graphite-gray bg-light-brown uppercase hover:bg-transparent hover:text-light-brown duration-300">1-к</button>
+                    <button
+                      class="py-2 px-5 w-full whitespace-nowrap rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">2-к</button>
+                    <button
+                      class="py-2 px-5 w-full whitespace-nowrap rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">3-к</button>
                   </div>
                 </div>
-              </div>
-
-              <div class="max-w-[254px] w-full">
-                <div class="range-slider">
-                  <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Этаж</span>
-                  <span class="multi-range block h-2 relative">
-                    <input type="range" min="0" max="50" value="0" id="lower2">
-                    <input type="range" min="0" max="50" value="35" id="upper2">
-                    <div class="slider-track" id="track2"></div>
-                  </span>
-                  <div class="flex items-center justify-between">
-                    <span id="lower-value2" class="text-[13px] leading-6 text-light-brown block">1 этаж</span>
-                    <span id="upper-value2" class="text-[13px] leading-6 text-light-brown block">6 этаж</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="max-w-[254px] w-full">
-                <div class="range-slider">
-                  <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Стоимость</span>
-                  <span class="multi-range block h-2 relative">
-                    <input type="range" min="0" max="50" value="0" id="lower3">
-                    <input type="range" min="0" max="50" value="35" id="upper3">
-                    <div class="slider-track" id="track3"></div>
-                  </span>
-                  <div class="flex items-center justify-between">
-                    <span id="lower-value3" class="text-[13px] leading-6 text-light-brown block">от 4.805 млн</span>
-                    <span id="upper-value3" class="text-[13px] leading-6 text-light-brown block">до 5.402 млн</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-end justify-between gap-2">
-              <div class="flex items-end justify-between gap-10">
-                <div class="select-container">
-                  <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Литер</span>
-                  <div class="select text-sm relative w-[145px] text-light-brown border rounded-[12px]">
-                    <div class="flex h-[34px] items-center justify-between py-2 px-5 cursor-pointer select-toggle">
-                      <span class="selected-text block w-full">Литер</span>
-                      <img class="rotate-180 transition-transform duration-200" src="./assets/images/icons/up-arrow.svg"
-                        alt="">
-                    </div>
-                    <div
-                      class="option-box absolute left-[-1px] bg-[#313245] w-[145px] z-50 border border-light-brown hidden divide-y divide-solid border-t rounded-[12px] rounded-t-none">
-                      <span
-                        class="option-item block text-sm uppercase pl-[13px] cursor-pointer leading-[18px] py-2">А</span>
-                      <span
-                        class="option-item block text-sm uppercase pl-[13px] cursor-pointer leading-[18px] py-2">Б</span>
-                      <span
-                        class="option-item block text-sm uppercase pl-[13px] cursor-pointer leading-[18px] py-2">В</span>
+                <div class="xl:max-w-[254px] w-full">
+                  <div class="range-slider">
+                    <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Площадь номера</span>
+                    <span class="multi-range block h-2 relative">
+                      <input type="range" min="0" max="50" value="0" id="lower1">
+                      <input type="range" min="0" max="50" value="35" id="upper1">
+                      <div class="slider-track" id="track1"></div>
+                    </span>
+                    <div class="flex items-center justify-between">
+                      <span id="lower-value1" class="text-[13px] leading-6 text-light-brown block">44.5 м2</span>
+                      <span id="upper-value1" class="text-[13px] leading-6 text-light-brown block">184.5 м2</span>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Дополнительно</span>
-                  <div class="flex gap-5">
-                    <button
-                      class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">С
-                      отделкой</button>
-                    <button
-                      class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-graphite-gray bg-light-brown uppercase hover:bg-transparent hover:text-light-brown duration-300">со
-                      скидкой</button>
+
+                <div class="xl:max-w-[254px] w-full">
+                  <div class="range-slider">
+                    <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Этаж</span>
+                    <span class="multi-range block h-2 relative">
+                      <input type="range" min="0" max="50" value="0" id="lower2">
+                      <input type="range" min="0" max="50" value="35" id="upper2">
+                      <div class="slider-track" id="track2"></div>
+                    </span>
+                    <div class="flex items-center justify-between">
+                      <span id="lower-value2" class="text-[13px] leading-6 text-light-brown block">1 этаж</span>
+                      <span id="upper-value2" class="text-[13px] leading-6 text-light-brown block">6 этаж</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="xl:max-w-[254px] w-full">
+                  <div class="range-slider">
+                    <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Стоимость</span>
+                    <span class="multi-range block h-2 relative">
+                      <input type="range" min="0" max="50" value="0" id="lower3">
+                      <input type="range" min="0" max="50" value="35" id="upper3">
+                      <div class="slider-track" id="track3"></div>
+                    </span>
+                    <div class="flex items-center justify-between">
+                      <span id="lower-value3" class="text-[13px] leading-6 text-light-brown block">от 4.805 млн</span>
+                      <span id="upper-value3" class="text-[13px] leading-6 text-light-brown block">до 5.402 млн</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <button
-                class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">С
-                Сбросить</button>
+
+              <div class="flex xl:flex-row flex-col xl:items-end justify-between gap-2">
+                <div class="flex xl:flex-row flex-col items-end justify-between xl:gap-10 gap-[30px]">
+                  <div class="select-container xl:w-fit w-full">
+                    <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Литер</span>
+                    <div class="select text-sm relative xl:w-[145px] w-full text-light-brown border rounded-[12px]">
+                      <div class="flex h-[34px] items-center justify-between py-2 px-5 cursor-pointer select-toggle">
+                        <span class="selected-text block w-full">Литер</span>
+                        <img class="rotate-180 transition-transform duration-200"
+                          src="./assets/images/icons/up-arrow.svg" alt="">
+                      </div>
+                      <div
+                        class="option-box absolute left-[-1px] bg-[#313245] xl:w-[145px] w-[276px] z-50 border border-light-brown hidden divide-y divide-solid border-t rounded-[12px] rounded-t-none">
+                        <span
+                          class="option-item block text-sm uppercase pl-[13px] cursor-pointer leading-[18px] py-2">А</span>
+                        <span
+                          class="option-item block text-sm uppercase pl-[13px] cursor-pointer leading-[18px] py-2">Б</span>
+                        <span
+                          class="option-item block text-sm uppercase pl-[13px] cursor-pointer leading-[18px] py-2">В</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="xl:w-fit w-full">
+                    <span class="text-[13px] leading-6 text-light-brown block mb-[10px]">Дополнительно</span>
+                    <div class="flex xl:flex-row flex-col xl:gap-5 gap-3">
+                      <button
+                        class="py-2 px-5 rounded-[50px] xl:w-fit w-full border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">С
+                        отделкой</button>
+                      <button
+                        class="py-2 px-5 rounded-[50px] xl:w-fit w-full border border-light-brown text-sm text-graphite-gray bg-light-brown uppercase hover:bg-transparent hover:text-light-brown duration-300">со
+                        скидкой</button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="py-2 px-5 rounded-[50px] xl:mt-0 mt-10 border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">С
+                  Сбросить</button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="border-t border-[#B9998469]">
-          <div class="container flex items-center justify-between pb-[19px] pt-[17px] ">
+          <div
+            class="container flex items-center justify-between pb-[19px] pt-[17px] xl:border-b-0 border-b border-light-brown">
             <div class="flex items-center gap-[23px]">
               <button class="layout-btn">
                 <img src="./assets/images/icons/layout.svg" alt="layout icon">
@@ -199,7 +218,7 @@
               </button>
             </div>
             <div class="flex gap-10 select-container">
-              <div class="flex gap-[16px]">
+              <div class="xl:flex hidden gap-[16px]">
                 <button
                   class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">Все</button>
                 <button
@@ -224,11 +243,20 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="grid grid-cols-4 products-box divide-x  divide-solid">
+        </div>
+        <div class="container">
+          <div class="xl:hidden flex mt-5 gap-[16px] pb-5">
+            <button
+              class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-light-brown uppercase hover:bg-light-brown hover:text-graphite-gray duration-300">Все</button>
+            <button
+              class="py-2 px-5 rounded-[50px] border border-light-brown text-sm text-graphite-gray bg-light-brown uppercase hover:bg-transparent hover:text-light-brown duration-300">По
+              типам</button>
+          </div>
+        </div>
+        <div class="grid-product products-box divide-x xl:divide-solid">
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -238,12 +266,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -253,15 +304,16 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -271,12 +323,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -286,15 +361,16 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -304,12 +380,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -319,15 +418,16 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -337,12 +437,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -352,15 +475,16 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -370,12 +494,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -385,15 +532,16 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -403,12 +551,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -418,15 +589,16 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -436,12 +608,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -451,15 +646,16 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
           <div class="product-box lg:border-r border-t border-b border-[#B9998469] md:pl-8 pl-5 md:pr-6 pr-5 py-6">
-            <div class="product-top">
+            <div class="product-top media-hide">
               <div class="flex items-center justify-between text-light-brown">
                 <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
                 <span class="text-base leading-6 font-Muller font-normal layout-hide">4.805 млн</span>
@@ -469,12 +665,35 @@
                 *</span>
             </div>
             <div
-              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] mb-[35px] product-img">
+              class="bg-white py-[22px] px-[10px] h-[278px] relative border border-light-brown mt-[11px] md:mb-[35px] mb-[14px] product-img">
               <div class="absolute top-0 right-0 bg-light-brown py-[2.5px] px-3 text-white text-[13px] layout-hide">25
               </div>
-              <img class="h-full w-full " src="./assets/images/proekt-2.png" alt="prodject img">
+              <img class="h-full w-full object-contain" src="./assets/images/proekt-2.png" alt="prodject img">
             </div>
-            <div class="flex items-stretch divide-x divide-solid">
+            <div class="lg-plus:hidden block">
+              <div class="product-top mb-[7px] w-[205px]">
+                <div class="flex items-center justify-between text-light-brown">
+                  <span class="text-base leading-6 font-Muller font-normal uppercase">1-к номер</span>
+                  <span class="text-base leading-6 font-Muller font-normal">4.805 млн</span>
+                </div>
+                <span class="font-Muller leading-6 text-xs text-light-white font-light w-full">чистая прибыль
+                  780.000
+                  / год
+                  *</span>
+              </div>
+              <div class="flex items-stretch divide-x divide-solid">
+                <div class="text-light-brown pr-[13px]">
+                  <span class="text-xs leading-6 font-light">Площадь</span>
+                  <div class="text-sm leading-6 font-medium ">42.5 м2</div>
+                </div>
+                <div class="text-light-brown pl-[13px]">
+                  <span class="text-xs leading-6 font-light">Этаж</span>
+                  <div class="text-sm leading-6 font-medium ">5-9</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex media-hide"> -->
+            <div class="flex items-stretch divide-x divide-solid media-hide">
               <div class="text-light-brown layout-space-r pr-6">
                 <span class="text-xs leading-6 font-light">Площадь</span>
                 <div class="text-sm leading-6 font-medium ">42.5 м2</div>
@@ -484,12 +703,13 @@
                 <div class="text-sm leading-6 font-medium ">5-9</div>
               </div>
             </div>
-            <div class="list-block hidden text-light-brown space-y-2">
+            <div class="list-block hidden text-light-brown space-y-2 media-hide">
               <span class="text-2xl leading-6 font-Muller font-normal block">4.805 млн</span>
               <span class="font-Muller leading-6 text-base text-light-white font-light block">чистая прибыль 780.000 /
                 год
                 *</span>
             </div>
+            <!-- </div> -->
           </div>
         </div>
         <button

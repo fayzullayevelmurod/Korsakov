@@ -211,10 +211,7 @@ input[type="range"]:focus {
   gap: 0;
   @apply max-w-[1234px] mx-auto w-full border-none border-x-0 border-[#ECCCB373] px-0;
 }
-/* .products-box.list-product .product-box:last-child
-.products-box.list-product .product-box:first-child {
-  border: none;
-} */
+
 .products-box.list-product .product-box:nth-child(even) {
   border-top: 1px solid #ecccb373;
   border-bottom: 1px solid #ecccb373;
@@ -232,7 +229,7 @@ input[type="range"]:focus {
   height: 168px;
 }
 .products-box.list-product .layout-hide {
-  display: none;
+  /* display: none; */
 }
 .products-box.list-product .list-block {
   display: block;
@@ -258,6 +255,18 @@ input[type="range"]:focus {
   @apply bg-[#ECCCB373] w-[1px] rounded-none;
   width: 1px !important;
 }
+.grid-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+}
+.mortgage-calculator {
+  .scale {
+    margin: 0;
+  }
+}
+.hidden-scroll::-webkit-scrollbar {
+  @apply hidden;
+}
 
 /* media queris */
 @media screen and (max-width: 1280px) {
@@ -267,13 +276,16 @@ input[type="range"]:focus {
   input[type="range"] {
     width: 100%;
   }
-  .swiper-scrollbar{
+  .swiper-scrollbar {
     width: 96% !important;
     height: 1px !important;
   }
-  .swiper-scrollbar-drag{
+  .swiper-scrollbar-drag {
     height: 3px;
     margin-top: -1px;
+  }
+  .products-box.list-product {
+    @apply border-t-0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -297,7 +309,6 @@ input[type="range"]:focus {
   }
 }
 @media screen and (max-width: 768px) {
-
   .title-lg {
     font-size: 54px;
     font-weight: 400;
@@ -310,7 +321,7 @@ input[type="range"]:focus {
     line-height: 24px;
   }
   .breadcrumb ul {
-    padding: 46px 0 10px 0;
+    padding: 0 0 10px 0;
   }
   .title {
     font-size: 54px;
@@ -318,7 +329,7 @@ input[type="range"]:focus {
     line-height: 60.16px;
     letter-spacing: 0.01em;
   }
-  .h-el{
+  .h-el {
     height: 137px !important;
   }
   .interyer-nomer__swiper .swiper-slide-active {
@@ -340,12 +351,21 @@ input[type="range"]:focus {
   .gray-btn__lg {
     height: 40px;
   }
-}
-.mortgage-calculator {
-  .scale {
-    margin: 0;
+  .grid-product {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   }
 }
-.hidden-scroll::-webkit-scrollbar{
-  @apply hidden
+@media screen and (max-width: 992px) {
+  .list-block {
+    display: none !important;
+  }
+  .media-hide {
+    display: none;
+  }
+  .products-box.list-product .product-img {
+    min-width: 110px;
+    max-width: 110px;
+    height: 97px;
+    margin-right: 20px !important;
+  }
 }

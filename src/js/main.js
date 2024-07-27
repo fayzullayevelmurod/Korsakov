@@ -202,10 +202,10 @@ try {
   const productsBox = document.querySelector(".products-box");
 
   listBtn.addEventListener("click", () => {
-    productsBox.classList.add("list-product");
+    productsBox.classList.add("list-product", "px-5");
   });
   layoutBtn.addEventListener("click", () => {
-    productsBox.classList.remove("list-product");
+    productsBox.classList.remove("list-product", "px-5");
   });
 } catch (error) {
   console.log(error);
@@ -443,8 +443,10 @@ try {
   });
 } catch (error) {}
 
-Fancybox.bind("[data-fancybox]", {});
-Fancybox.bind('[data-fancybox="gallery2"]', {});
+try {
+  Fancybox.bind("[data-fancybox]", {});
+  Fancybox.bind('[data-fancybox="gallery2"]', {});
+} catch (error) {}
 
 // product-swiper
 try {
@@ -530,3 +532,35 @@ try {
 
   window.addEventListener("resize", checkWindowSize);
 } catch (error) {}
+
+try {
+  const filterBox = document.querySelector(".filter-box");
+  const openFilterBtn = document.querySelector(".open-filter-btn");
+  const overlay = document.querySelector(".overlay");
+  const closeBtn = document.querySelector(".close-filter-btn");
+
+  openFilterBtn.addEventListener("click", () => {
+    filterBox.classList.remove("-translate-x-full");
+    overlay.classList.remove("hidden");
+    closeBtn.classList.remove("hidden");
+    document.body.style.overflow = "hidden"
+  });
+  closeBtn.addEventListener("click", () => {
+    filterBox.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+    closeBtn.classList.add("hidden");
+    document.body.style.overflow = ""
+  });
+  overlay.addEventListener("click", () => {
+    filterBox.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+    closeBtn.classList.add("hidden");
+    document.body.style.overflow = ""
+  });
+  // window.addEventListener("resize", () => {
+  //   if (window.innerWidth < 1280) {
+  //   }
+  // });
+} catch (error) {
+  console.log(error);
+}
