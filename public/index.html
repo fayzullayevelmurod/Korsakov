@@ -8,6 +8,8 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="./fonts/stylesheet.css">
   <link rel="stylesheet" href="./fonts/Monserat/stylesheet.css">
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
   <!-- swiper css link -->
   <link rel="stylesheet" href="../src/css/swiper-bundle.min.css" />
   <!-- custom css -->
@@ -17,9 +19,9 @@
 <body>
   <div class="overflow-hidden">
     <!-- header -->
-    <header class="relative">
+    <header>
       <div
-        class="header-menu absolute top-0 left-0 w-[375px] bg-light-brown pt-[23px] px-[24px] pb-[35px] -translate-x-full duration-300">
+        class="header-menu absolute top-0 left-0 w-[375px] overflow-y-auto overflow-x-hidden bg-light-brown pt-[23px] px-[24px] pb-[35px] -translate-x-full duration-300">
         <button class="close-menu__btn mb-[150px]">
           <img src="./assets/images/icons/close-icon.svg" alt="close icon" />
         </button>
@@ -52,7 +54,7 @@
         </ul>
         <a class="gray-btn__lg" href="#!">Заказать звонок</a>
       </div>
-      <div class="flex items-center justify-between pt-7 text-sm xl:max-w-[1388px] mx-auto xl:px-0 px-5">
+      <div class="flex items-center justify-between text-sm xl:max-w-[1388px] mx-auto xl:px-0 px-5">
         <button class="open-menu__btn flex items-center md:gap-2.5 md:w-[175px]">
           <img src="./assets/images/icons/hamburger-menu.svg" alt="hamburger-menu" />
           <span class="font-light text-white md:block hidden">меню</span>
@@ -68,68 +70,252 @@
     <!-- main -->
     <main id="main">
       <!-- intro -->
-      <section class="mt-[70px]">
-        <img class="w-full h-[675px]" src="./assets/images/intro-bg.png" alt="intro bg" />
+      <a class="md:hidden block mx-auto w-fit mt-[150px] mb-[164px]" href="#!">
+        <img src="./assets/images/logo/company-logo.png" alt="company-logo" width="229" height="70">
+      </a>
+      <section class="md:mt-[70px]">
+        <img class="w-full lg:h-[675px] sm:h-[450px] h-[176px]" src="./assets/images/intro-bg.png" alt="intro bg" />
 
-        <div class="pt-[92px] pb-[72px] flex items-start justify-between gap-5 container">
-          <div class="space-y-[6px] max-w-[237px]">
+        <div
+          class="md:pt-[92px] pt-5 md:pb-[72px] pb-[50px] flex flex-wrap md:flex-row flex-col md:text-left text-center md:divide-y-0 divide-y divide-[#B9998478]  items-start justify-between md:gap-5 container">
+          <div class="md:space-y-[6px] space-y-2 md:pb-0 pb-5 w-full md:max-w-[237px]">
             <span
-              class="text-[54px] leading-[55.73px] font-medium font-ReformaGroteskMediumC text-light-brown">842</span>
-            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+              class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">842</span>
+            <p class="text-[#FFFFFF99] md:text-base text-sm leading-[19.5px] font-light">
               Номера в гостиничном копмлексе
             </p>
           </div>
-          <div class="space-y-[6px] max-w-[237px]">
+          <div class="md:space-y-[6px] space-y-2 md:py-0 py-5 w-full md:max-w-[237px]">
             <span
-              class="text-[54px] leading-[55.73px] font-medium font-ReformaGroteskMediumC text-light-brown">490</span>
-            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+              class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">490</span>
+            <p class="text-[#FFFFFF99] md:text-base text-sm leading-[19.5px] font-light">
               Машиномест. 434 в многоуровневой парковке и 56 открытых гостевых
             </p>
           </div>
-          <div class="space-y-[6px] max-w-[237px]">
-            <span class="text-[54px] leading-[55.73px] font-medium font-ReformaGroteskMediumC text-light-brown">3
+          <div class="md:space-y-[6px] space-y-2 md:py-0 py-5 w-full md:max-w-[237px]">
+            <span
+              class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">3
               гектара</span>
-            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+            <p class="text-[#FFFFFF99] md:text-base text-sm leading-[19.5px] font-light">
               Территории гостиничного комплекса
             </p>
           </div>
-          <div class="space-y-[6px] max-w-[237px]">
-            <span class="text-[54px] leading-[55.73px] font-medium font-ReformaGroteskMediumC text-light-brown">3
+          <div class="md:space-y-[6px] space-y-2 md:py-0 py-5 w-full md:max-w-[237px]">
+            <span
+              class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium font-ReformaGrotesk text-light-brown">3
               корпуса</span>
-            <p class="text-[#FFFFFF99] text-base leading-[19.5px] font-light">
+            <p class="text-[#FFFFFF99] md:text-base text-sm leading-[19.5px] font-light">
               Всего в гостиничном комплексе
             </p>
           </div>
         </div>
       </section>
 
-      <section class="container mb-[120px]">
-        <h1 class="title-lg flex items-center gap-[46px]">
-          <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
-          <span>Локация комплекса</span>
-        </h1>
-        <div class="font-Muller flex justify-between">
-          <p class="text-white max-w-[526px] leading-6 font-light text-lg tracking-wide">
-            Сложно придумать более идеальную локацию для гостиничного комплекса: у резидентов «Корсакова» будет соблюдён
-            баланс всех сфер жизни как на территории отеля, так и за его пределами.
-          </p>
-          <p class="text-[#FFFFFF66] max-w-[526px] leading-[22px] font-normal tracking-wide">
-            Здесь в ближайшем доступе не только морской берег, но и разнообразная инфраструктура. Шаговая доступность магазинов, центров общественного досуга и питания, а также социальных объектов, сделает ваш отдых ещё более комфортным.
-          </p>
+      <!--  -->
+      <section class="lg-plus:pb-[180px] pb-[50px] relative">
+        <img class="absolute right-0 top-[185px] h-[899px] -z-10 lg:block hidden" src="./assets/images/naqsh-2.png"
+          alt="naqsh-bg">
+        <div class="container">
+          <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+            <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+              src="./assets/images/icons/title-line.svg" alt="line icon" />
+            <span>Оазис благополучия</span>
+          </h1>
+          <div class="max-w-[526px] md:mt-[30px] mt-[21px] md:space-y-[15px] space-y-[6px]">
+            <p class="font-Muller font-light text-sm leading-[18px] md:text-lg md:leading-6 text-white">
+              Добро пожаловать в роскошный гостиничный комплекс, раскинувшийся на трёх гектарах великолепной природы.
+              Это
+              место, где каждая деталь внимательно продумана, чтобы сделать отдых незабываемым.
+            </p>
+            <p class="font-Muller font-normal text-sm leading-[18px] md:text-base md:leading-[22px] text-[#FFFFFF66]">
+              Наш гостиничный комплекс расположен в одной из наилучших локаций — всего в 15 минутах от морского
+              побережья.
+              Здесь вы сможете в полной мере погрузиться в волшебную атмосферу курорта и насладиться уютом и
+              уединённостью. Из окон южных номеров откроется вид на бескрайние песчаные пляжи и морскую гладь, а
+              свежесть
+              бриза и шум прибоя смогут уловить все жители комплекса.
+            </p>
+          </div>
+
+          <div class="swiper oasis-swiper lg-plus:mt-0 mt-4 md:mr-0 mr-[-20px]">
+            <div class="swiper-wrapper lg-plus:items-center items-stretch">
+
+              <!-- birinchi ikkitalik sliderlar -->
+              <div class="swiper-slide h-[unset]">
+                <div class="group lg-plus:w-[360px] lg-plus:h-[260px] w-full h-full ml-auto relative">
+                  <a href="./assets/images/product-img-1.png" data-fancybox="gallery">
+                    <img class="ml-auto w-full h-full" src="./assets/images/slide-img-1.png" alt="product img">
+                    <div
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                      <img src="./assets/images/icons/search.svg" alt="search icon" width="24" height="24">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide h-[unset]">
+                <div class="group">
+                  <a href="https://www.youtube.com/watch?v=C3vyugaBhSs" data-fancybox="video">
+                    <img class="lg-plus:w-[618px] lg-plus:h-[435px] w-full h-full"
+                      src="./assets/images/product-img-1.png" alt="product img">
+                    <div
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                      <img src="./assets/images/icons/play.svg" alt="play icon" width="39" height="39">
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ikkinchi ikkitalik sliderlar -->
+              <div class="swiper-slide h-[unset]">
+                <div class="group lg-plus:w-[360px] lg-plus:h-[260px] w-full h-full ml-auto relative">
+                  <a href="./assets/images/product-img-1.png" data-fancybox="gallery">
+                    <img class="ml-auto w-full h-full" src="./assets/images/slide-img-1.png" alt="product img">
+                    <div
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                      <img src="./assets/images/icons/search.svg" alt="search icon" width="24" height="24">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide h-[unset]">
+                <div class="group">
+                  <a href="./assets/images/product-img-1.png" data-fancybox="gallery">
+                    <img class="lg-plus:w-[618px] lg-plus:h-[435px] w-full h-full"
+                      src="./assets/images/product-img-1.png" alt="product img">
+                    <div
+                      class="absolute duration-300 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                      <img src="./assets/images/icons/search.svg" alt="search icon" width="24" height="24">
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="btns flex gap-[53px] lg-plus:pt-0 pt-[30px]">
+              <button class="oasis-prev-btn">
+                <img src="./assets/images/icons/prev-arrow.svg" alt="prev-arrow">
+              </button>
+              <button class="oasis-next-btn">
+                <img src="./assets/images/icons/next-arrow.svg" alt="next-arrow">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="md:mb-[120px] mb-0">
+        <div class="container">
+          <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+            <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+              src="./assets/images/icons/title-line.svg" alt="line icon" />
+            <span>Локация комплекса</span>
+          </h1>
+          <div
+            class="font-Muller flex lg-plus:flex-row flex-col lg-plus:space-y-0 space-y-[6px] justify-between mt-[26px]">
+            <p
+              class="text-white lg-plus:max-w-[526px] md:leading-6 leading-[18px] font-light md:text-lg text-sm tracking-wide">
+              Сложно придумать более идеальную локацию для гостиничного комплекса: у резидентов «Корсакова» будет
+              соблюдён
+              баланс всех сфер жизни как на территории отеля, так и за его пределами.
+            </p>
+            <p
+              class="text-[#FFFFFF66] lg-plus:max-w-[526px] md:leading-[22px] leading-[18px] md:text-base text-sm font-normal tracking-wide">
+              Здесь в ближайшем доступе не только морской берег, но и разнообразная инфраструктура. Шаговая доступность
+              магазинов, центров общественного досуга и питания, а также социальных объектов, сделает ваш отдых ещё
+              более
+              комфортным.
+            </p>
+          </div>
+
+          <div class="md:border-t border-light-brown md:mt-[78px] mt-[28px]">
+            <div
+              class="flex md:flex-row flex-col items-start md:text-left text-center justify-between md:pt-10 md:gap-5 md:divide-y-0 divide-y divide-[#B9998478]">
+              <div class="space-y-[6px] md:max-w-[237px] pb-5 w-full">
+                <span
+                  class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium md:font-ReformaGroteskMediumC font-ReformaGrotesk text-light-brown">15
+                  минут</span>
+                <p class="text-[#FFFFFF99] md:text-base text-sm md:leading-[19.5px] leading-[17.07px] font-light">
+                  Пешком до моря
+                </p>
+              </div>
+              <div class="space-y-[6px] md:max-w-[237px] md:py-0 py-5 w-full">
+                <span
+                  class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium md:font-ReformaGroteskMediumC font-ReformaGrotesk text-light-brown">10
+                  минут</span>
+                <p class="text-[#FFFFFF99] md:text-base text-sm md:leading-[19.5px] leading-[17.07px] font-light">
+                  До центра города Анапа
+                </p>
+              </div>
+              <div class="space-y-[6px] md:max-w-[237px] md:py-0 py-5 w-full">
+                <span
+                  class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium md:font-ReformaGroteskMediumC font-ReformaGrotesk text-light-brown">15
+                  минут</span>
+                <p class="text-[#FFFFFF99] md:text-base text-sm md:leading-[19.5px] leading-[17.07px] font-light">
+                  До аэропорта
+                </p>
+              </div>
+              <div class="space-y-[6px] md:max-w-[237px] md:py-0 py-5 w-full">
+                <span
+                  class="md:text-[54px] text-[42px] leading-[46.79px] md:leading-[55.73px] font-medium md:font-ReformaGroteskMediumC font-ReformaGrotesk text-light-brown">40
+                  минут</span>
+                <p class="text-[#FFFFFF99] md:text-base text-sm md:leading-[19.5px] leading-[17.07px] font-light">
+                  До Бугазской косы
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative md:pb-[198px] pb-[300px]">
+          <img class="absolute right-0 md:bottom-0 bottom-[194px] -z-10" src="./assets/images/naqsh-bg.png"
+            alt="naqsh-bg">
+          <div class="relative h-[467px] overflow-hidden md:mt-[60px] mt-[33px]" id="map2"></div>
+          <div
+            class="bg-light-brown md:w-[669px] w-[256px] p-[15px] md:pt-9 md:pb-8 flex justify-center md:gap-[110px] gap-4 absolute md:left-[52px] left-0 md:flex-row flex-col md:bottom-[93px] bottom-[53px]">
+            <div class="md:space-y-[22px] space-y-4 text-[13px] leading-6 font-medium text-graphite-gray">
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/images/icons/map-icon-1.svg" alt="map iconn">
+                <span class="block">— Пляжи</span>
+              </div>
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/images/icons/map-icon-2.svg" alt="map iconn">
+                <span class="block">— Супермаркеты / рынки</span>
+              </div>
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/images/icons/map-icon-3.svg" alt="map iconn">
+                <span class="block">— Медучреждения</span>
+              </div>
+            </div>
+            <div class="md:space-y-[22px] space-y-4 text-[13px] leading-6 font-medium text-graphite-gray">
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/images/icons/map-icon-4.svg" alt="map iconn">
+                <span class="block">— Парки / скверы</span>
+              </div>
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/images/icons/map-icon-5.svg" alt="map iconn">
+                <span class="block">— Парки развлечений</span>
+              </div>
+              <div class="flex items-center gap-[10px]">
+                <img src="./assets/images/icons/map-icon-6.svg" alt="map iconn">
+                <span class="block">— Аквапарки</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- complex -->
       <section class="complex">
         <div class="container">
-          <h1 class="title-lg flex items-center gap-[46px]">
-            <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+          <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+            <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+              src="./assets/images/icons/title-line.svg" alt="line icon" />
             <span>Преимущества</span>
           </h1>
 
-          <div class="mt-[51px] flex flex-col gap-10">
+          <div class="md:mt-[51px] mt-6 flex flex-col gap-10">
             <div class="flex lg-plus:flex-row flex-col lg-plus:items-center justify-between lg:gap-[102px] gap-5">
-              <img src="./assets/images/product-img-1.png" alt="product img" />
+              <img class="object-cover" src="./assets/images/product-img-1.png" alt="product img" />
               <div class="max-w-[515px] flex flex-col lg-plus:gap-6">
                 <div
                   class="md:text-[54px] text-[32px] md:leading-[55.73px] leading-[33.02px] lg-plus:pb-0 pb-2 text-light-brown font-medium font-ReformaGroteskMediumC uppercase">
@@ -162,10 +348,10 @@
                   сфер жизни как на территории отеля, так и за его пределами.
                 </p>
               </div>
-              <img src="./assets/images/product-img-2.png" alt="product img" />
+              <img class="object-cover" src="./assets/images/product-img-2.png" alt="product img" />
             </div>
             <div class="flex lg-plus:flex-row flex-col lg-plus:items-center justify-between lg:gap-[102px] gap-5">
-              <img src="./assets/images/product-img-3.png" alt="product img" />
+              <img class="object-cover" src="./assets/images/product-img-3.png" alt="product img" />
               <div class="max-w-[515px] flex flex-col lg-plus:gap-6">
                 <div
                   class="md:text-[54px] text-[32px] md:leading-[55.73px] leading-[33.02px] lg-plus:pb-0 pb-2 text-light-brown font-medium font-ReformaGrotesk uppercase">
@@ -188,19 +374,20 @@
 
 
       <!--  -->
-      <section class="mt-[120px]">
+      <section class="md:mt-[120px] mt-[50px]">
         <div class="container">
-          <h1 class="title-lg flex items-center gap-[46px]">
-            <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+          <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+            <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+              src="./assets/images/icons/title-line.svg" alt="line icon" />
             <span>Окупаемость 7 лет</span>
           </h1>
 
           <h4 class="text-[36px] leading-[36px] font-normal font-Muller text-light-brown mb-[31px] mt-[50px]">
             Инвестиционный калькулятор</h4>
-          <div class="flex items-center justify-between gap-4">
+          <div class="flex flex-wrap items-center justify-between md:gap-4 gap-5">
             <div class="bg-light-brown p-6 max-w-[668px] w-full space-y-[30px]">
-              <div class="flex lg:flex-row flex-col items-center  lg:gap-10 gap-[30px] text-gray">
-                <div class="w-full max-w-[238px]">
+              <div class="flex lg:flex-row flex-col lg:items-center lg:gap-10 gap-[30px] text-gray">
+                <div class="w-full md:max-w-[238px] ">
                   <span class="text-sm leading-[18px] font-light font-Muller block">Сумма инвестиций</span>
                   <div class="range_container mt-[15px]">
                     <div class="sliders_control">
@@ -213,7 +400,7 @@
                     class="text-[20px] pt-[15px] leading-[20px] font-normal block font-Muller text-graphite-gray">260
                     руб.</span>
                 </div>
-                <div class="w-full max-w-[238px]">
+                <div class="w-full md:max-w-[238px] ">
                   <span class="text-sm leading-[18px] font-light font-Muller block">Площадь номера</span>
                   <div class="range_container mt-[15px]">
                     <div class="sliders_control">
@@ -226,7 +413,7 @@
                     class="text-[20px] pt-[15px] leading-[20px] font-normal block font-Muller text-graphite-gray">55м2</span>
                 </div>
               </div>
-              <div class="flex items-end gap-4 justify-between">
+              <div class="flex items-end gap-4 justify-between md:flex-row flex-col">
                 <div class="space-y-[10px] w-full">
                   <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Ваш телефон</span>
                   <input
@@ -238,14 +425,14 @@
                   расчет</button>
               </div>
             </div>
-            <div class="text-light-brown space-y-3">
-              <span class="text-2xl block leading-6 font-normal font-Muller">Прибыль от инвестиций:</span>
-              <span class="text-[96px] block leading-[106.94px] font-ReformaGrotesk font-normal">до 9.000.000 руб. /
+            <div class="text-light-brown md:space-y-3 space-y-[6px]">
+              <span class="md:text-2xl text-base leading-[16px] block md:leading-6 font-normal font-Muller">Прибыль от инвестиций:</span>
+              <span class="md:text-[96px] text-[48px] leading-[53.47px] block md:leading-[106.94px] font-ReformaGrotesk font-normal">до 9.000.000 руб. /
                 год</span>
             </div>
           </div>
         </div>
-        <div class="mt-[60px] bg-light-brown pt-7 pb-[57px]">
+        <div class="md:mt-[60px] mt-[26px] bg-light-brown pt-7 pb-[57px]">
           <div class="container flex">
             <div class="divide-y divide-[#313245B2] space-y-[20px] w-full">
               <div class="flex gap-[40px] justify-between">
@@ -312,8 +499,9 @@
       <!-- general plan -->
       <section class="md:mt-[130px] md:mb-[120px] my-[50px]">
         <div class="container">
-          <h1 class="title-lg flex items-center gap-[46px]">
-            <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+          <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+            <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+              src="./assets/images/icons/title-line.svg" alt="line icon" />
             <span>Преимущества</span>
           </h1>
         </div>
@@ -518,8 +706,9 @@
       <section class="interyer-nomer md:pb-[120px] pb-[50px]">
         <div class="container">
           <div class="flex justify-between items-end">
-            <h1 class="title-lg flex items-center gap-[46px]">
-              <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+            <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+              <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+                src="./assets/images/icons/title-line.svg" alt="line icon" />
               <span>интерьеры</span>
             </h1>
             <div class="flex gap-5">
@@ -540,28 +729,28 @@
           <div class="swiper-container interyer-nomer__swiper lg:mt-14 mt-5">
             <div class="swiper-wrapper">
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-1.png"
-                  alt="product img" />
+                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                  src="assets/images/slide-img-1.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-2.png"
-                  alt="product img" />
+                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                  src="assets/images/slide-img-2.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-3.png"
-                  alt="product img" />
+                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                  src="assets/images/slide-img-3.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-1.png"
-                  alt="product img" />
+                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                  src="assets/images/slide-img-1.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-2.png"
-                  alt="product img" />
+                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                  src="assets/images/slide-img-2.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] h-[213px]" width="100%" height="465" src="assets/images/slide-img-3.png"
-                  alt="product img" />
+                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                  src="assets/images/slide-img-3.png" alt="product img" />
               </div>
             </div>
           </div>
@@ -579,8 +768,9 @@
 
       <!-- Complex numbers -->
       <section class="container pb-[120px]">
-        <h1 class="title-lg flex items-center gap-[46px]">
-          <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+        <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+          <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+            src="./assets/images/icons/title-line.svg" alt="line icon" />
           <span>Номера комплекса</span>
         </h1>
 
@@ -603,50 +793,70 @@
           </button>
         </div>
 
-        <div class="flex items-stretch gap-[50px] mt-[43px] divide-[#ECCCB373]">
-          <div>
-            <h4 class="font-medium text-2xl leading-6 text-light-brown mb-[43px] uppercase">Планировки</h4>
-            <div class="grid grid-cols-2 gap-[72px]">
-              <div>
-                <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
-                  <img class="h-full w-full" src="./assets/images/proect-1.png" alt="prodject img">
+        <div class="flex items-stretch mt-[43px] space-x-[50px] divide-[#ECCCB373]">
+          <div class="w-full">
+            <div class="swiper product-swiper h-[520px]">
+              <h4
+                class="bg-graphite-gray relative z-50 font-medium text-2xl leading-6 text-light-brown mb-[43px] uppercase">
+                Планировки</h4>
+              <div class="swiper-wrapper">
+                <div class="w-[221px] swiper-slide">
+                  <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
+                    <img class="h-full w-full" src="./assets/images/proect-1.png" alt="product img">
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
+                    <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
+                  </div>
                 </div>
-                <div class="flex justify-between items-center mt-2">
-                  <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
-                  <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
+                <div class="w-[221px] swiper-slide">
+                  <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
+                    <img class="h-full w-full" src="./assets/images/proect-1.png" alt="product img">
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
+                    <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
+                  </div>
+                </div>
+                <div class="w-[221px] swiper-slide">
+                  <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
+                    <img class="h-full w-full" src="./assets/images/proect-1.png" alt="product img">
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
+                    <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
+                  </div>
+                </div>
+                <div class="w-[221px] swiper-slide">
+                  <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
+                    <img class="h-full w-full" src="./assets/images/proect-1.png" alt="product img">
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
+                    <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
+                  </div>
+                </div>
+                <div class="w-[221px] swiper-slide">
+                  <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
+                    <img class="h-full w-full" src="./assets/images/proect-1.png" alt="product img">
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
+                    <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
+                  </div>
+                </div>
+                <div class="w-[221px] swiper-slide">
+                  <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
+                    <img class="h-full w-full" src="./assets/images/proect-1.png" alt="product img">
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
+                    <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
+                  </div>
                 </div>
               </div>
-              <div>
-                <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
-                  <img class="h-full w-full" src="./assets/images/proect-1.png" alt="prodject img">
-                </div>
-                <div class="flex justify-between items-center mt-2">
-                  <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
-                  <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
-                </div>
-              </div>
-              <div>
-                <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
-                  <img class="h-full w-full" src="./assets/images/proect-1.png" alt="prodject img">
-                </div>
-                <div class="flex justify-between items-center mt-2">
-                  <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
-                  <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
-                </div>
-              </div>
-              <div>
-                <div class="bg-white py-[22px] px-[10px] h-[150px] w-[221px]">
-                  <img class="h-full w-full" src="./assets/images/proect-1.png" alt="prodject img">
-                </div>
-                <div class="flex justify-between items-center mt-2">
-                  <span class="text-light-white text-[13px] leading-6">40.5 м2</span>
-                  <span class="text-white text-[13px] leading-6">от 4.366 млн</span>
-                </div>
-              </div>
+              <div class="swiper-scrollbar"></div>
             </div>
-          </div>
-          <div class="relative w-[1px] bg-[#ECCCB373]">
-            <div class="w-[3px] h-[142px] bg-light-brown absolute top-0 left-1/2 -translate-x-1/2"></div>
           </div>
           <div>
             <div class="flex items-start justify-between">
@@ -660,12 +870,12 @@
             </div>
             <div>
               <div class="bg-[#cbccd0] h-[375px] w-[616px] mt-3 flex items-center justify-center relative">
-                <img class="object-contain" src="./assets/images/proect-3.png" alt="prodject img">
-                <div
+                <img id="project-image" class="object-contain" src="./assets/images/proect-3.png" alt="project img">
+                <a id="show-more" href="./assets/images/proect-3.png" data-fancybox="gallery2"
                   class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[86px] h-[86px] flex flex-col px-[11px] text-center space-y-[2px] cursor-pointer items-center justify-center bg-light-brown rounded-full">
                   <img src="./assets/images/icons/eye.svg" alt="eye icon">
                   <span class="font-medium leading-[11px] text-[11px] text-white">Показать ещё</span>
-                </div>
+                </a>
               </div>
               <div class="flex justify-between items-center mt-[26px]">
                 <div class="flex space-x-6 divide-x divide-[#ADA4A04D] w-fit">
@@ -690,8 +900,9 @@
       <!-- payment-methods -->
       <section class="payment-methods">
         <div class="container">
-          <h1 class="title-lg flex items-center gap-[46px]">
-            <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+          <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+            <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+              src="./assets/images/icons/title-line.svg" alt="line icon" />
             <span>способы оплаты</span>
           </h1>
           <div class="lg-plus:flex items-stretch justify-between md:mt-12 mt-[30px] border-t border-[#ECCCB373]">
@@ -786,9 +997,10 @@
       </section>
 
       <!-- stock -->
-      <section class="container md:my-[120px] my-[50px]">
-        <h1 class="title-lg flex items-center gap-[46px]">
-          <img class="-ml-[53px]" src="./assets/images/icons/title-line.svg" alt="line icon" />
+      <section class="container md:my-[120px] my-[50px]" id="stock">
+        <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
+          <img class="xl:-ml-[53px] lg-plus:w-[52px] lg-plus:h-[17px] w-[24px] h-[8px]"
+            src="./assets/images/icons/title-line.svg" alt="line icon" />
           <span>акции</span>
         </h1>
 
@@ -857,7 +1069,7 @@
 
       <section class="document">
         <div class="container">
-          <h1 class="title-lg flex items-center gap-[46px]">
+          <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
             <img src="./assets/images/icons/title-line.svg" alt="line icon" />
             <span>документы</span>
           </h1>
@@ -893,7 +1105,7 @@
 
       <!-- developer -->
       <section class="container mt-[120px]">
-        <h1 class="title-lg flex items-center gap-[46px]">
+        <h1 class="title-lg flex items-center lg-plus:gap-[46px] gap-[15px]">
           <img src="./assets/images/icons/title-line.svg" alt="line icon" />
           <span>застройщик “сск”</span>
         </h1>
@@ -935,10 +1147,13 @@
 
         <div
           class="relative bg-[url('../assets/images/video-bg.png')] h-[652px] md:mt-[91px] mt-[30px] flex items-center justify-center">
-          <button>
-            <img src="./assets/images/icons/play.svg" alt="play icon">
-          </button>
+          <a data-fancybox href="https://www.youtube.com/watch?v=C3vyugaBhSs">
+            <button>
+              <img src="./assets/images/icons/play.svg" alt="play icon">
+            </button>
+          </a>
         </div>
+
 
       </section>
 
@@ -1005,6 +1220,10 @@
     </footer>
   </div>
 
+  <!-- Fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <!-- yamaps -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
   <!-- swiper js -->
   <script src="../src/js/swiper-bundle.min.js"></script>
   <!-- js -->

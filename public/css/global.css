@@ -2,12 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  @apply w-[5px];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-light-brown;
+}
+::-webkit-scrollbar-track {
+  @apply bg-[#ECCCB373];
+}
+html {
+  @apply scroll-smooth;
+}
+
 body {
   @apply bg-graphite-gray font-Montserrat font-normal text-base;
 }
-
+main {
+  @apply mt-[88px];
+}
+header {
+  @apply fixed top-0 bg-graphite-gray z-[100] py-5 left-0 w-full;
+}
 span {
-  @apply inline-block
+  @apply inline-block;
+}
+a:-webkit-any-link:focus-visible {
+  @apply outline-none;
 }
 .container {
   @apply max-w-[1234px] mx-auto;
@@ -126,80 +147,6 @@ input[type="range"] {
   background-color: #666;
 }
 
-/* media queris */
-@media screen and (max-width: 1280px) {
-  .container {
-    @apply max-w-full px-5;
-  }
-  input[type="range"] {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .title-xl {
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 49.54px;
-    letter-spacing: 0.01em;
-  }
-}
-@media screen and (max-width: 992px) {
-  .title-lg {
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 70.16px;
-    letter-spacing: 0.01em;
-  }
-  .title {
-    font-size: 74px;
-    line-height: 80.16px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .title-lg {
-    font-size: 54px;
-    font-weight: 400;
-    line-height: 60.16px;
-    letter-spacing: 0.01em;
-  }
-  .title-xs {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  .breadcrumb ul {
-    padding: 46px 0 10px 0;
-  }
-  .title {
-    font-size: 54px;
-    font-weight: 400;
-    line-height: 60.16px;
-    letter-spacing: 0.01em;
-  }
-  .interyer-nomer__swiper .swiper-slide-active {
-    min-width: unset !important;
-  }
-  .outline-btn,
-  .gray-btn,
-  .gray-btn__lg,
-  .brown-btn {
-    height: 30px;
-  }
-  .interyer-nomer {
-    .swiper {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-  }
-  .gray-btn__lg {
-    height: 40px;
-  }
-}
-.mortgage-calculator {
-  .scale {
-    margin: 0;
-  }
-}
 /* filter box */
 .filter-box input[type="range"] {
   box-sizing: border-box;
@@ -301,4 +248,88 @@ input[type="range"]:focus {
 
 [class*="ymaps-"][class*="-ground-pane"] {
   filter: grayscale(100);
+}
+
+/* swiper-scrollbar-drag */
+.swiper-scrollbar-drag {
+  @apply w-[3px] bg-light-brown rounded-none -ml-[1px];
+}
+.swiper-scrollbar {
+  @apply bg-[#ECCCB373] w-[1px] rounded-none;
+  width: 1px !important;
+}
+
+/* media queris */
+@media screen and (max-width: 1280px) {
+  .container {
+    @apply max-w-full px-5;
+  }
+  input[type="range"] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .title-xl {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 49.54px;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .title-lg {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70.16px;
+    letter-spacing: 0.01em;
+  }
+  .title {
+    font-size: 74px;
+    line-height: 80.16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title-lg {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 60.16px;
+    letter-spacing: 0.01em;
+  }
+  .title-xs {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .breadcrumb ul {
+    padding: 46px 0 10px 0;
+  }
+  .title {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 60.16px;
+    letter-spacing: 0.01em;
+  }
+  .interyer-nomer__swiper .swiper-slide-active {
+    min-width: unset !important;
+  }
+  .outline-btn,
+  .gray-btn,
+  .gray-btn__lg,
+  .brown-btn {
+    height: 30px;
+  }
+  .interyer-nomer {
+    .swiper {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+  .gray-btn__lg {
+    height: 40px;
+  }
+}
+.mortgage-calculator {
+  .scale {
+    margin: 0;
+  }
 }
