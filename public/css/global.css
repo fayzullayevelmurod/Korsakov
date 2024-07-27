@@ -267,6 +267,14 @@ input[type="range"]:focus {
   input[type="range"] {
     width: 100%;
   }
+  .swiper-scrollbar{
+    width: 96% !important;
+    height: 1px !important;
+  }
+  .swiper-scrollbar-drag{
+    height: 3px;
+    margin-top: -1px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .title-xl {
@@ -289,6 +297,7 @@ input[type="range"]:focus {
   }
 }
 @media screen and (max-width: 768px) {
+
   .title-lg {
     font-size: 54px;
     font-weight: 400;
@@ -309,8 +318,12 @@ input[type="range"]:focus {
     line-height: 60.16px;
     letter-spacing: 0.01em;
   }
+  .h-el{
+    height: 137px !important;
+  }
   .interyer-nomer__swiper .swiper-slide-active {
     min-width: unset !important;
+    width: 100% !important;
   }
   .outline-btn,
   .gray-btn,
@@ -332,4 +345,7 @@ input[type="range"]:focus {
   .scale {
     margin: 0;
   }
+}
+.hidden-scroll::-webkit-scrollbar{
+  @apply hidden
 }

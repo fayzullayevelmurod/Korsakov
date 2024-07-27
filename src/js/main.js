@@ -463,5 +463,70 @@ try {
     mousewheel: true,
     freeMode: false,
     slidesPerColumnFill: "row",
+    breakpoints: {
+      1280: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      0: {
+        direction: "horizontal",
+        slidesPerView: 3,
+        spaceBetween: 0,
+        mousewheel: false,
+        freeMode: false,
+        slidesPerColumnFill: "col",
+        grid: {
+          rows: 1,
+          fill: "row",
+        },
+      },
+    },
   });
+} catch (error) {}
+
+try {
+  function manageCorps() {
+    const openCorpusBtn = document.querySelectorAll(".open-corpus-btn");
+    const corpuses = document.querySelectorAll(".corpus");
+
+    openCorpusBtn.forEach((btn) => {
+      const targetId = btn.getAttribute("data-target");
+      if (targetId == "corpus-1") {
+        btn.classList.add("bg-light-brown", "text-white");
+        btn.classList.remove("bg-white", "text-graphite-gray");
+        console.log(targetId);
+        corpuses.forEach((corpus) => {
+          if (corpus.id == "corpus-1") {
+            corpus.classList.remove("hidden");
+          } else {
+            corpus.classList.add("hidden");
+          }
+        });
+      }
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-target");
+        openCorpusBtn.forEach((el) => {
+          el.classList.remove("bg-light-brown", "text-white");
+          el.classList.add("bg-white", "text-graphite-gray");
+        });
+        btn.classList.add("bg-light-brown", "text-white");
+        corpuses.forEach((corpus) => {
+          if (corpus.id == targetId) {
+            corpus.classList.remove("hidden");
+          } else {
+            corpus.classList.add("hidden");
+          }
+        });
+      });
+    });
+  }
+
+  function checkWindowSize() {
+    if (window.innerWidth < 1024) {
+      manageCorps();
+    }
+  }
+  window.addEventListener("DOMContentLoaded", checkWindowSize);
+
+  window.addEventListener("resize", checkWindowSize);
 } catch (error) {}
