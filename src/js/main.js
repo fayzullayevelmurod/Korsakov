@@ -557,10 +557,24 @@ try {
     closeBtn.classList.add("hidden");
     document.body.style.overflow = ""
   });
-  // window.addEventListener("resize", () => {
-  //   if (window.innerWidth < 1280) {
-  //   }
-  // });
 } catch (error) {
   console.log(error);
+}
+
+
+try {
+  const modal = document.querySelector('.modal');
+  const openModalBtn = document.querySelector('.open-modal-btn');
+  const closeModalBtn = document.querySelector('.close-modal-btn');
+
+  openModalBtn.addEventListener('click', () => {
+    modal.classList.remove('hidden')
+    modal.classList.add('flex')
+  })
+  closeModalBtn.addEventListener('click', () => {
+    modal.classList.add('hidden')
+    modal.classList.remove('flex');
+  })
+} catch (error) {
+
 }

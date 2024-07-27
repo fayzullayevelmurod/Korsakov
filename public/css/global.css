@@ -287,6 +287,9 @@ input[type="range"]:focus {
   .products-box.list-product {
     @apply border-t-0;
   }
+  .over {
+    overflow-y: auto;
+  }
 }
 @media screen and (max-width: 1024px) {
   .title-xl {
@@ -368,4 +371,36 @@ input[type="range"]:focus {
     height: 97px;
     margin-right: 20px !important;
   }
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 24px;
+}
+.checkbox-input:checked + .checkbox-label::after {
+  transform: scale(1) translateY(-50%);
+}
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background: #b99984;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  background-image: url(../assets/images/icons/check.svg);
+  background-size: contain;
+  width: 8px;
+  height: 6px;
+  background-repeat: no-repeat;
+  transform: scale(0) translateY(-50%);
 }

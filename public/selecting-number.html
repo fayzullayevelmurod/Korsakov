@@ -101,7 +101,7 @@
               </svg>
             </button>
             <div
-              class="xl:translate-x-[unset] -translate-x-full close-filter-btn duration-300 filter-box xl:space-y-6 xl:pb-[38px] filter-box xl:relative fixed z-[100] bg-graphite-gray top-0 left-0 xl:w-full w-[316px] xl:pt-0 xl:px-0 pt-[14px] px-5 pb-[30px] xl:h-auto h-screen xl:overflow-hidden overflow-y-auto">
+              class="xl:translate-x-[unset] -translate-x-full close-filter-btn duration-300 filter-box xl:space-y-6 xl:pb-[38px] filter-box xl:relative fixed xl:z-0 z-[100] bg-graphite-gray top-0 left-0 xl:w-full w-[316px] xl:pt-0 xl:px-0 pt-[14px] px-5 pb-[30px] xl:h-auto h-screen xl:overflow-[unset] over">
               <h3 class="text-[40px] leading-[44.56px] font-ReformaGrotesk text-light-brown pb-2 xl:hidden block">
                 Фильтры
               </h3>
@@ -777,6 +777,57 @@
         </div>
       </div>
     </footer>
+  </div>
+
+  <div class="modal bg-[#00000099] items-center justify-center fixed top-0 left-0 w-full h-full z-[299] hidden">
+    <div class="relative">
+      <button class="absolute top-0 z-[100] right-[-35px] close-modal-btn">
+        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.01709" y1="18.2758" x2="18.2929" y2="0.999991" stroke="#B99984" stroke-linecap="round"></line>
+          <line x1="18.2758" y1="19" x2="0.99999" y2="1.72419" stroke="#B99984" stroke-linecap="round"></line>
+        </svg>
+      </button>
+      <div class="bg-[#313245] py-[28px] px-[35px]">
+        <h4 class="text-[54px] leading-[60.16px] text-light-brown font-ReformaGrotesk font-normal">Заказать консультацию
+        </h4>
+        <p class="text-base leading-[22px] text-light-brown font-light max-w-[425px] mt-[11px] mb-[30px]">
+          Оставьте свой телефон, и наш менеджер свяжется с вами в течение 5 минут
+        </p>
+        <div class="flex gap-5">
+          <div class="space-y-[10px] w-full">
+            <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Ваше имя</span>
+            <input
+              class="w-full border border-[#B9998478] rounded-[50px] py-3 px-5 bg-transparent text-[#B99984] placeholder:text-[#B9998478] outline-none h-10"
+              type="text" placeholder="Олег" value="Олег">
+          </div>
+          <div class="space-y-[10px] w-full">
+            <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Ваш телефон</span>
+            <input
+              class="w-full border border-[#B9998478] rounded-[50px] py-3 px-5 bg-transparent text-[#B99984] placeholder:text-[#B9998478] outline-none h-10"
+              type="tel" placeholder="+7 (000) 000-00-00">
+          </div>
+        </div>
+        <div class="space-y-[10px] w-full">
+          <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Комментарий</span>
+          <input
+            class="w-full border border-[#B9998478] rounded-[50px] py-3 px-5 bg-transparent text-[#B99984] placeholder:text-[#B9998478] outline-none h-10"
+            type="text" placeholder="Олег" value="Я олег">
+        </div>
+        <div class="flex items-center justify-between mt-5">
+          <div>
+            <input class="checkbox-input hidden" checked type="checkbox" id="one">
+            <label class="checkbox-label" for="one">
+              <span class="text-[#FFFFFFB2] text-[11px] font-light font-Muller cursor-pointer">Я принимаю условия <a
+                  class="text-[#FFFFFFB2] text-[11px] underline font-light font-Muller" href="#!">Пользовательского
+                  соглашения</a></span>
+            </label>
+          </div>
+          <button class="py-[11px] px-[32px] bg-[#B99984] text-graphite-gray text-sm rounded-[50px]">
+            Отправить
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- swiper js -->
