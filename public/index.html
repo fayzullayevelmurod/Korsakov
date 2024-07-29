@@ -21,7 +21,7 @@
     <!-- header -->
     <header>
       <div
-        class="header-menu absolute top-0 left-0 w-[375px] overflow-y-auto overflow-x-hidden bg-light-brown pt-[23px] px-[24px] pb-[35px] -translate-x-full duration-300">
+        class="header-menu absolute h-screen top-0 left-0 w-[375px] overflow-y-auto overflow-x-hidden bg-light-brown pt-[23px] px-[24px] pb-[35px] -translate-x-full duration-300">
         <button class="close-menu__btn mb-[150px]">
           <img src="./assets/images/icons/close-icon.svg" alt="close icon" />
         </button>
@@ -138,35 +138,49 @@
           </div>
 
           <div class="swiper oasis-swiper lg-plus:mt-0 mt-4 md:mr-0 mr-[-20px]">
-            <div class="swiper-wrapper lg-plus:items-center items-stretch">
+            <div class="swiper-wrapper oasis-swiper__wrapper lg-plus:items-center items-stretch h-[435px]">
 
               <!-- birinchi ikkitalik sliderlar -->
-              <div class="swiper-slide h-[unset]">
-                <div class="group lg-plus:w-[360px] lg-plus:h-[260px] w-full h-full ml-auto relative">
-                  <a href="./assets/images/product-img-1.png" data-fancybox="gallery">
-                    <img class="ml-auto w-full h-full" src="./assets/images/slide-img-1.png" alt="product img">
-                    <div
-                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
-                      <img src="./assets/images/icons/search.svg" alt="search icon" width="24" height="24">
-                    </div>
-                  </a>
-                </div>
+              <div class="swiper-slide">
+                <a class="swiper-img" href="./assets/images/product-img-1.png" data-fancybox="gallery">
+                  <img class="ml-auto w-full h-full swiper-img" src="./assets/images/slide-img-1.png" alt="product img">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                    <img src="./assets/images/icons/search.svg" alt="search icon" width="24" height="24">
+                  </div>
+                </a>
               </div>
-              <div class="swiper-slide h-[unset]">
-                <div class="group">
-                  <a href="https://www.youtube.com/watch?v=C3vyugaBhSs" data-fancybox="video">
-                    <img class="lg-plus:w-[618px] lg-plus:h-[435px] w-full h-full"
-                      src="./assets/images/product-img-1.png" alt="product img">
-                    <div
-                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
-                      <img src="./assets/images/icons/play.svg" alt="play icon" width="39" height="39">
-                    </div>
-                  </a>
-                </div>
+              <div class="swiper-slide">
+                <a class="swiper-img" href="https://www.youtube.com/watch?v=C3vyugaBhSs" data-fancybox="video">
+                  <img class="swiper-img" src="./assets/images/product-img-1.png" alt="product img">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                    <img src="./assets/images/icons/play.svg" alt="play icon" width="39" height="39">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="swiper-img" href="./assets/images/product-img-1.png" data-fancybox="gallery">
+                  <img class="ml-auto w-full h-full swiper-img" src="./assets/images/slide-img-1.png" alt="product img">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                    <img src="./assets/images/icons/search.svg" alt="search icon" width="24" height="24">
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="swiper-img" href="https://www.youtube.com/watch?v=C3vyugaBhSs" data-fancybox="video">
+                  <img class="swiper-img" src="./assets/images/product-img-1.png" alt="product img">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[110px] duration-300 rounded-full bg-[#B999844D] flex items-center justify-center cursor-pointer scale-0 group-hover:scale-100">
+                    <img src="./assets/images/icons/play.svg" alt="play icon" width="39" height="39">
+                  </div>
+                </a>
               </div>
 
               <!-- ikkinchi ikkitalik sliderlar -->
-              <div class="swiper-slide h-[unset]">
+              <!-- <div class="swiper-slide">
                 <div class="group lg-plus:w-[360px] lg-plus:h-[260px] w-full h-full ml-auto relative">
                   <a href="./assets/images/product-img-1.png" data-fancybox="gallery">
                     <img class="ml-auto w-full h-full" src="./assets/images/slide-img-1.png" alt="product img">
@@ -177,7 +191,7 @@
                   </a>
                 </div>
               </div>
-              <div class="swiper-slide h-[unset]">
+              <div class="swiper-slide">
                 <div class="group">
                   <a href="./assets/images/product-img-1.png" data-fancybox="gallery">
                     <img class="lg-plus:w-[618px] lg-plus:h-[435px] w-full h-full"
@@ -188,7 +202,7 @@
                     </div>
                   </a>
                 </div>
-              </div>
+              </div> -->
 
             </div>
             <div class="btns flex md:gap-[53px] gap-[33px] lg-plus:pt-0 pt-[30px]">
@@ -508,11 +522,13 @@
             <span>генплан комплекса</span>
           </h1>
         </div>
-        <div class="w-full md:h-[758px] h-[594px] relative md:mt-[46px] mt-[31px]">
-          <img class="w-full h-full object-cover sm:block hidden" src="./assets/images/complex-bg.png"
-            alt="complex-bg" />
-          <img class="w-full h-full object-cover sm:hidden" src="./assets/images/media-complex-bg.png"
-            alt="complex-bg" />
+        <div class="w-full md:h-[758px] h-[594px] relative md:mt-[46px] mt-[31px] flex items-center justify-center">
+          <div class="md:w-full md:overflow-hidden w-[768px] overflow-x-scroll h-full">
+            <div class="h-full md:w-full w-[768px]">
+              <img class="h-full object-cover w-full" src="./assets/images/complex-bg.png"
+              alt="complex-bg" />
+            </div>
+          </div>
           <div class="absolute md:top-[180px] md:left-[309px] top-[119px] left-[-20px] group">
             <div
               class="w-[60px] open-corpus-btn cursor-pointer select-none h-[60px] flex items-center justify-center rounded-full bg-white text-graphite-gray relative z-20 group-hover:bg-light-brown group-hover:text-white duration-300"
@@ -912,27 +928,27 @@
           <div class="swiper-container interyer-nomer__swiper lg:mt-14 mt-5">
             <div class="swiper-wrapper">
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465"
                   src="assets/images/slide-img-1.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465"
                   src="assets/images/slide-img-2.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465"
                   src="assets/images/slide-img-3.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465"
                   src="assets/images/slide-img-1.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465"
                   src="assets/images/slide-img-2.png" alt="product img" />
               </div>
               <div class="swiper-slide sm:h-[465px] h-[213px]">
-                <img class="sm:h-[465px] object-cover h-[213px]" width="100%" height="465"
+                <img class="sm:h-[465px] h-[213px]" width="100%" height="465"
                   src="assets/images/slide-img-3.png" alt="product img" />
               </div>
             </div>
@@ -1091,7 +1107,8 @@
                   class="block font-light font-Muller leading-6 text-base md:text-2xl text-light-brown text-right">от
                   4.805
                   млн</span>
-                <span class="md:block hidden text-light-white text-base leading-6 font-light font-Muller">чистая прибыль 780.000
+                <span class="md:block hidden text-light-white text-base leading-6 font-light font-Muller">чистая прибыль
+                  780.000
                   /
                   год *</span>
               </div>
@@ -1233,11 +1250,11 @@
         </h1>
 
         <div
-          class="divide-y lg-plus:divide-solid lg-plus:divide-light-brown lg-plus:border-y divide-none border-light-brown lg-plus:mt-[45px] mt-[30px]">
+          class="divide-y lg-plus:divide-solid lg-plus:divide-light-brown lg-plus:border-y divide-none border-light-brown lg-plus:mt-[45px] mt-[30px] space-y-[13px]">
           <div
-            class=" lg-plus:py-7 flex items-stretch lg-plus:flex-row flex-col lg-plus:gap-[30px] gap-5 justify-between">
+            class=" lg-plus:py-7 flex items-stretch lg-plus:flex-row flex-col lg-plus:gap-[30px] gap-[30px] justify-between">
             <div class="font-Muller flex flex-col justify-between lg-plus:pt-[17px] pb-[7px]">
-              <div class="max-w-[522px]">
+              <div class="max-w-[522px] space-y-[10px] mb-[23px]">
                 <h3
                   class="md:text-[28px] text-base leading-[16px] md:leading-[60px] font-medium text-light-brown uppercase">
                   Квартиры с готовым
@@ -1258,9 +1275,9 @@
           </div>
 
           <div
-            class=" lg-plus:py-7 flex items-stretch lg-plus:flex-row flex-col lg-plus:gap-[30px] gap-5 justify-between">
+            class=" lg-plus:py-7 flex items-stretch lg-plus:flex-row flex-col lg-plus:gap-[30px] gap-[30px] justify-between">
             <div class="font-Muller flex flex-col justify-between lg-plus:pt-[17px] pb-[7px]">
-              <div class="max-w-[522px]">
+              <div class="max-w-[522px] space-y-[10px] mb-[23px]">
                 <h3
                   class="md:text-[28px] text-base leading-[16px] md:leading-[60px] font-medium text-light-brown uppercase">
                   Квартиры с готовым
@@ -1281,9 +1298,9 @@
           </div>
 
           <div
-            class=" lg-plus:py-7 flex items-stretch lg-plus:flex-row flex-col lg-plus:gap-[30px] gap-5 justify-between">
+            class=" lg-plus:py-7 flex items-stretch lg-plus:flex-row flex-col lg-plus:gap-[30px] gap-[30px] justify-between">
             <div class="font-Muller flex flex-col justify-between lg-plus:pt-[17px] pb-[7px]">
-              <div class="max-w-[522px]">
+              <div class="max-w-[522px] space-y-[10px] mb-[23px]">
                 <h3
                   class="md:text-[28px] text-base leading-[16px] md:leading-[60px] font-medium text-light-brown uppercase">
                   Квартиры с готовым

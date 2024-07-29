@@ -424,7 +424,7 @@ try {
     slidesPerView: 2,
     spaceBetween: 51,
     speed: 900,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     navigation: {
       nextEl: ".oasis-next-btn",
       prevEl: ".oasis-prev-btn",

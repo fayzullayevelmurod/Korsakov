@@ -61,7 +61,7 @@ a:-webkit-any-link:focus-visible {
 
 /*  */
 .breadcrumb ul {
-  @apply flex items-center gap-4 text-white font-Muller text-sm leading-[14px] pt-[83px] pb-5;
+  @apply flex items-center gap-8 text-white font-Muller text-sm leading-[14px] pt-[83px] pb-5;
 }
 
 .gray-btn,
@@ -403,4 +403,58 @@ input[type="range"]:focus {
   height: 6px;
   background-repeat: no-repeat;
   transform: scale(0) translateY(-50%);
+}
+.oasis-swiper .swiper-img,
+.oasis-swiper .swiper-slide {
+  @apply transition-all duration-700;
+}
+.oasis-swiper .swiper-slide-next .swiper-img {
+  min-width: 591px;
+  width: 591px;
+  height: 435px;
+}
+.oasis-swiper .swiper-slide-active {
+  @apply flex items-center justify-end;
+}
+.oasis-swiper .swiper-slide-active .swiper-img {
+  min-width: 360px;
+  width: 360px;
+  height: 260px;
+  margin-left: auto;
+}
+@media screen and (max-width: 992px) {
+  .oasis-swiper .swiper-slide-active .swiper-img,
+  .oasis-swiper .swiper-slide-next .swiper-img,
+  .oasis-swiper .swiper-slide .swiper-img {
+    @apply min-w-[unset] w-full h-full;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .oasis-swiper__wrapper {
+    @apply h-[193px];
+  }
+  .oasis-swiper__wrapper .swiper-img {
+    @apply object-cover;
+  }
+}
+.breadcrumb-link{
+  position: relative;
+}
+
+.breadcrumb-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 6px;
+  background: url(../assets/images/icons/next-icon.svg) no-repeat;
+}
+@media screen and (max-width: 480px) {
+  .interyer-nomer__swiper .swiper-slide-active {
+    min-width: unset !important;
+    width: 318px !important;
+  }
 }
