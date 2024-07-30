@@ -56,7 +56,7 @@ a:-webkit-any-link:focus-visible {
 }
 
 .outline-btn {
-  @apply font-Muller uppercase h-[34px] flex items-center justify-center text-sm px-6 rounded-[50px] font-normal border-light-brown border text-light-brown transition-all ease-linear hover:bg-light-brown hover:text-white;
+  @apply font-Muller uppercase h-[34px] flex items-center justify-center text-sm px-6 rounded-[50px] font-normal border-light-brown border text-light-brown transition-all ease-linear hover:bg-light-brown hover:text-graphite-gray;
 }
 
 /*  */
