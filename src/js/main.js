@@ -38,7 +38,7 @@ window.addEventListener("click", (e) => {
 var swiper = new Swiper(".interyer-nomer__swiper", {
   slidesPerView: 4,
   spaceBetween: 51,
-  loop: false,
+  loop: true,
   speed: 700,
   navigation: {
     nextEl: ".next-btn",
