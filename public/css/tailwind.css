@@ -3083,6 +3083,11 @@ input[type="range"]:focus {
   border-color: rgb(185 153 132 / var(--tw-border-opacity));
 }
 
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .hover\:bg-graphite-gray:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(49 50 69 / var(--tw-bg-opacity));
@@ -3105,6 +3110,11 @@ input[type="range"]:focus {
 .hover\:text-light-brown:hover {
   --tw-text-opacity: 1;
   color: rgb(185 153 132 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .disabled\:opacity-5:disabled {
