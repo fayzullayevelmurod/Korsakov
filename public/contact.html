@@ -51,7 +51,7 @@
               href="#!">Документы</a>
           </li>
         </ul>
-        <a class="gray-btn__lg" href="#!">Заказать звонок</a>
+        <a class="gray-btn__lg open-modal-btn" href="#!">Заказать звонок</a>
       </div>
       <div class="flex items-center justify-between text-sm xl:max-w-[1388px] mx-auto xl:px-0 px-5">
         <button class="open-menu__btn flex items-center md:gap-2.5 md:w-[175px]">
@@ -86,19 +86,29 @@
 
           <div class="flex md:gap-11 gap-[20px] md:mt-[36px] mt-5 md:flex-row flex-col">
             <div class="text-light-brown border-t border-[#B9998478] pt-[13px]">
-              <h3 class="md:title-[54px] text-[40px] uppercase md:leading-[60.16px] leading-[44.56px] font-ReformaGrotesk brown mb-3">Головной офис
+              <h3
+                class="md:title-[54px] text-[40px] uppercase md:leading-[60.16px] leading-[44.56px] font-ReformaGrotesk brown mb-3">
+                Головной офис
               </h3>
-              <a class="md:text-[17px] text-[15px] leading-[20.72px] font-semibold block" href="#!">г. Новороссийск, п. Дзержинского,
+              <a class="md:text-[17px] text-[15px] leading-[20.72px] font-semibold block" href="#!">г. Новороссийск, п.
+                Дзержинского,
                 244</a>
-              <a class="md:text-base text-sm leading-6 tracking-wide block md:pt-[14px] pt-[10px] md:pb-2 pb-1" href="#!">+7 (000) 000-00-00</a>
-              <a class="md:text-base text-sm leading-6 tracking-wide block" href="mailto:mail@pochta.ru">mail@pochta.ru</a>
+              <a class="md:text-base text-sm leading-6 tracking-wide block md:pt-[14px] pt-[10px] md:pb-2 pb-1"
+                href="#!">+7 (000) 000-00-00</a>
+              <a class="md:text-base text-sm leading-6 tracking-wide block"
+                href="mailto:mail@pochta.ru">mail@pochta.ru</a>
             </div>
             <div class="text-light-brown border-t border-[#B9998478] pt-[13px]">
-              <h3 class="md:title-[54px] text-[40px] uppercase md:leading-[60.16px] leading-[44.56px] font-ReformaGrotesk brown mb-3">офис продаж</h3>
-              <a class="md:text-[17px] text-[15px] leading-[20.72px] font-semibold block" href="#!">г. Новороссийск, п. Дзержинского,
+              <h3
+                class="md:title-[54px] text-[40px] uppercase md:leading-[60.16px] leading-[44.56px] font-ReformaGrotesk brown mb-3">
+                офис продаж</h3>
+              <a class="md:text-[17px] text-[15px] leading-[20.72px] font-semibold block" href="#!">г. Новороссийск, п.
+                Дзержинского,
                 244</a>
-              <a class="md:text-base text-sm leading-6 tracking-wide block md:pt-[14px] pt-[10px] md:pb-2 pb-1" href="#!">+7 (000) 000-00-00</a>
-              <a class="md:text-base text-sm leading-6 tracking-wide block" href="mailto:mail@pochta.ru">mail@pochta.ru</a>
+              <a class="md:text-base text-sm leading-6 tracking-wide block md:pt-[14px] pt-[10px] md:pb-2 pb-1"
+                href="#!">+7 (000) 000-00-00</a>
+              <a class="md:text-base text-sm leading-6 tracking-wide block"
+                href="mailto:mail@pochta.ru">mail@pochta.ru</a>
             </div>
           </div>
         </div>
@@ -160,6 +170,56 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="modal bg-[#00000099] items-center justify-center fixed top-0 left-0 w-full h-full z-[299] hidden">
+    <div class="relative max-w-[576px] flex items-center justify-center modal-content">
+      <button class="absolute top-0 z-[100] right-[-35px] close-modal-btn">
+        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.01709" y1="18.2758" x2="18.2929" y2="0.999991" stroke="#B99984" stroke-linecap="round"></line>
+          <line x1="18.2758" y1="19" x2="0.99999" y2="1.72419" stroke="#B99984" stroke-linecap="round"></line>
+        </svg>
+      </button>
+      <div class="bg-[#313245] py-[28px] px-[35px]">
+        <h4 class="text-[54px] leading-[60.16px] text-light-brown font-ReformaGrotesk font-normal">Заказать консультацию
+        </h4>
+        <p class="text-base leading-[22px] text-light-brown font-light max-w-[425px] mt-[11px] mb-[30px]">
+          Оставьте свой телефон, и наш менеджер свяжется с вами в течение 5 минут
+        </p>
+        <div class="flex gap-5">
+          <div class="space-y-[10px] w-full">
+            <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Ваше имя</span>
+            <input
+              class="w-full border border-[#B9998478] rounded-[50px] py-3 px-5 bg-transparent text-[#B99984] placeholder:text-[#B9998478] outline-none h-10"
+              type="text" placeholder="Олег" value="Олег">
+          </div>
+          <div class="space-y-[10px] w-full">
+            <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Ваш телефон</span>
+            <input
+              class="w-full border border-[#B9998478] rounded-[50px] py-3 px-5 bg-transparent text-[#B99984] placeholder:text-[#B9998478] outline-none h-10"
+              type="tel" placeholder="+7 (000) 000-00-00">
+          </div>
+        </div>
+        <div class="space-y-[10px] w-full">
+          <span class="font-light text-[13px] leading-[13px] text-graphite-gray block">Комментарий</span>
+          <input
+            class="w-full border border-[#B9998478] rounded-[50px] py-3 px-5 bg-transparent text-[#B99984] placeholder:text-[#B9998478] outline-none h-10"
+            type="text" placeholder="Олег" value="Я олег">
+        </div>
+        <div class="flex items-center justify-between mt-5">
+          <div>
+            <input class="checkbox-input hidden" checked type="checkbox" id="one">
+            <label class="checkbox-label" for="one">
+              <span class="text-[#FFFFFFB2] text-[11px] font-light font-Muller cursor-pointer">Я принимаю условия <a
+                  class="text-[#FFFFFFB2] text-[11px] underline font-light font-Muller" href="#!">Пользовательского
+                  соглашения</a></span>
+            </label>
+          </div>
+          <button class="py-[11px] px-[32px] bg-[#B99984] text-graphite-gray text-sm rounded-[50px]">
+            Отправить
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
